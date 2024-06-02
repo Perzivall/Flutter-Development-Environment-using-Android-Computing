@@ -37,6 +37,9 @@ nohup code-server & disown
 echo "Acesse o ip $ip_address:8080"
 echo "-----------------------------------------"
 ```
-
+SET PERMISSIONS TO EXECUTE SCRIPT
+```
+chmod +x start.sh
+```
 
 
