@@ -37,9 +37,35 @@ nohup code-server & disown
 echo "Acesse o ip $ip_address:8080"
 echo "-----------------------------------------"
 ```
+
 SET PERMISSIONS TO EXECUTE SCRIPT
 ```
 chmod +x start.sh
 ```
+
+START AND STOP CODE SERVER TO CREATE INITIAL FILES
+```
+code-server
+```
+AWAIT 10 SECONDS AND STOP SERVICE
+```
+code-server stop
+```
+
+EDIT CONFIG FILE SERVER AND SAVE
+
+auth: none
+```
+nano /root/.config/code-server/config.yaml
+```
+
+
+START SCRIPT 
+```
+./start.sh
+```
+Now acess the IP address showing in terminal in our Browser
+example: http://192.168.1.105:8080
+
 
 
