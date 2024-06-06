@@ -19,7 +19,7 @@ Login in PROOT enviroment distro
 ```
 proot-distro login debian --
 apt update -y && apt upgrade -y
-``
+```
 
 Install code-server
 ```
