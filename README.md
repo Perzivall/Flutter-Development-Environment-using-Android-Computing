@@ -22,7 +22,7 @@ proot-distro login debian --
 
 Update Packages Debian
 ```
-apt update -y && apt upgrade -y
+apt update -y && apt upgrade -y && sudo apt install wget git -y
 ```
 
 Create user
@@ -95,6 +95,16 @@ Create directory in /home/YOUR_USER/
 mkdir /home/$(whoami)/android-sdk
 cd /home/$(whoami)/android-sdk
 wget https://github.com/Perzivall/Flutter-Server-Android-arm64/releases/download/34.0.4/build-tools-34.0.4-aarch64.tar.xz &&
-wget https://github.com/Perzivall/Flutter-Server-Android-arm64/releases/download/34.0.4/platform-tools-34.0.4-aarch64.tar.xz
+wget https://github.com/Perzivall/Flutter-Server-Android-arm64/releases/download/34.0.4/platform-tools-34.0.4-aarch64.tar.xz &&
+tar -xf build-tools-34.0.4-aarch64.tar.xz &&
+tar -xf platform-tools-34.0.4-aarch64.tar.xz
 ```
 
+Adicione variaveis ao PATH 
+```
+echo 'export ANDROID_SDK_ROOT="$HOME/android-sdk/"' >> ~/.bashrc
+echo 'export ANDROID_HOME="$HOME/android-sdk/"' >> ~/.bashrc
+echo 'export PATH="$PATH:$HOME/android-sdk/build-tools/34.0.4"' >> ~/.bashrc
+echo 'export PATH="$PATH:$HOME/android-sdk/platform-tools"' >> ~/.bashrc
+echo 'export PATH="$PATH:$HOME/android-sdk/flutter/bin"' >> ~/.bashrc
+```
