@@ -17,12 +17,11 @@ proot-distro install debian
 
 Login in PROOT enviroment distro
 ```
-proot-distro login debian
+proot-distro login debian --
 apt update -y && apt upgrade -y
 ``
 
-#Install code-server
-
+Install code-server
 ```
 curl -fsSL https://code-server.dev/install.sh | sh
 ```
