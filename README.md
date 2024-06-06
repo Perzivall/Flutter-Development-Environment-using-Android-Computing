@@ -18,6 +18,10 @@ proot-distro install debian
 Login in PROOT enviroment distro
 ```
 proot-distro login debian --
+```
+
+Update Packages Debian
+```
 apt update -y && apt upgrade -y
 ```
 
