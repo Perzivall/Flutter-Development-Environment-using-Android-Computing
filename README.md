@@ -27,7 +27,7 @@ apt update -y && apt upgrade -y
 
 Create user
 ```
-useradd -m -s /bin/bash USUARIO && echo "USUARIO:SENHA" | chpasswd && sudo usermod -aG sudo USUARIO
+useradd -m -s /bin/bash USUARIO && echo "USUARIO:SENHA" | chpasswd && usermod -aG sudo USUARIO
 
 ```
 
