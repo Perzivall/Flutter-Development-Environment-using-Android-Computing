@@ -25,6 +25,12 @@ Update Packages Debian
 apt update -y && apt upgrade -y
 ```
 
+Create user
+```
+useradd -m -s /bin/bash USUARIO && echo "USUARIO:SENHA" | chpasswd && sudo usermod -aG sudo USUARIO
+
+```
+
 Install code-server
 ```
 curl -fsSL https://code-server.dev/install.sh | sh
