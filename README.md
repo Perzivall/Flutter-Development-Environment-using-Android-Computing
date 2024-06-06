@@ -44,7 +44,7 @@ CREATE START SCRIPT NAMED "start.sh"
 ip_address=$(ifconfig | grep 'inet ' | awk '{print $2}' | grep '192' | head -n 1)
 
 # Caminho do arquivo de configuração
-file_path="/root/.config/code-server/config.yaml"
+file_path="/home/$(whoami)/.config/code-server/config.yaml"
 
 # Verificando se a variável ip_address está vazia
 if [ -z "$ip_address" ]; then
