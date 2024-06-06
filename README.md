@@ -108,3 +108,10 @@ echo 'export PATH="$PATH:$HOME/android-sdk/build-tools/34.0.4"' >> ~/.bashrc
 echo 'export PATH="$PATH:$HOME/android-sdk/platform-tools"' >> ~/.bashrc
 echo 'export PATH="$PATH:$HOME/android-sdk/flutter/bin"' >> ~/.bashrc
 ```
+IN YOUR BROWSER, OPEN THE VSCODE SERVER IP ON THE PORT 8080, THEN FOLLOW THIS STEPS
+```
+1. Install the flutter extension on VSCode
+2. Click on the command vscode and write "Flutter: New Project"
+3. Click on the bottom side popup "Download SDK" and select folder "/home/YOUR_USER/android-sdk/"
+4. Wait the donwload complete, then create new Flutter project
+``` 
