@@ -90,5 +90,10 @@ START SCRIPT
 Now acess the IP address showing in terminal in our Browser
 example: http://192.168.1.105:8080
 
-
+Create directory in /home/YOUR_USER/
+```
+mkdir android-sdk &&
+wget https://github.com/Perzivall/Flutter-Server-Android-arm64/releases/download/34.0.4/build-tools-34.0.4-aarch64.tar.xz &&
+wget https://github.com/Perzivall/Flutter-Server-Android-arm64/releases/download/34.0.4/platform-tools-34.0.4-aarch64.tar.xz
+```
 
