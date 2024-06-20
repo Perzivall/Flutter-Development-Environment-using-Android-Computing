@@ -14,7 +14,12 @@ Que as pessoas saibam que tu, cujo nome é Jeová, Somente tu és o Altíssimo s
 May people know that you, whose name is Jehovah, You alone are the Most High over all the earth.
 ```
 
-# Termux configuration
+# ☕ Help me to buy a coffe
+- Thank'you for yours contribuition
+- https://ko-fi.com/perzivall
+
+
+# 📟 Termux configuration
 
 1. Download and install Termux
     - In your android browser
@@ -32,7 +37,7 @@ May people know that you, whose name is Jehovah, You alone are the Most High ove
     proot-distro install debian
     ```
 
-# Proot configuration
+# 🫚 Proot configuration
 
 1. Login in Proot enviroment distro
     ```
@@ -105,7 +110,7 @@ May people know that you, whose name is Jehovah, You alone are the Most High ove
     killall node
     ```
 
-# Acess VSCode in a Browser computer
+# 💻 Acess VSCode in a Browser computer
 
     Now you have to able to access the IP address showing in terminal in our Browser, it's showing ip in the termux cli
     example: http://192.168.1.105:8080
@@ -146,7 +151,7 @@ May people know that you, whose name is Jehovah, You alone are the Most High ove
     4. Wait paciently to download is complete, then try create new Flutter project
     ```
 
-# After create Flutter Project
+# 🧑‍🍳 After create Flutter Project
 > [!Warning]
 > For flutter compile correcly android apps, follow this steps
 
@@ -183,7 +188,7 @@ May people know that you, whose name is Jehovah, You alone are the Most High ove
    sdkmanager --licenses
    ```
 
-# Use your smartphone to run compiled apps
+# 📲 Use your smartphone to run compiled apps
 You can connect and debugging apps direcly in this device
 
 1. If android smartphone version >= Android 11
@@ -212,7 +217,7 @@ You can connect and debugging apps direcly in this device
    > The adb tcpip command only needs to be run once
     
 
-# For disabling PID Exited with signal 9, connect adb device in the termux device
+# ⚠️ For disabling PID Exited with signal 9, connect adb device in the termux device
 > [!Warning]
 > In someone devices, the termux crashes with code "PID Exited with signal 9"
 > Execute this command to solve
@@ -225,7 +230,7 @@ adb shell "/system/bin/device_config put activity_manager max_phantom_processes 
 adb shell settings put global settings_enable_monitor_phantom_procs false
 ```
 
-# Acknowledgments
+# 🤗 Acknowledgments
 1. First of all
    > My god Jehova for give my life ♥
    > 
