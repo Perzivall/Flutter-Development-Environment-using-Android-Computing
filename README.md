@@ -104,6 +104,8 @@ mkdir /home/$(whoami)/android-sdk
 cd /home/$(whoami)/android-sdk
 wget https://github.com/Perzivall/Flutter-Server-Android-arm64/releases/download/34.0.4/build-tools-34.0.4-aarch64.tar.xz &&
 wget https://github.com/Perzivall/Flutter-Server-Android-arm64/releases/download/34.0.4/platform-tools-34.0.4-aarch64.tar.xz &&
+wget https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip &&
+unzip commandlinetools-linux-11076708_latest.zip &&
 tar -xf build-tools-34.0.4-aarch64.tar.xz &&
 tar -xf platform-tools-34.0.4-aarch64.tar.xz
 ```
@@ -115,6 +117,8 @@ echo 'export ANDROID_HOME="$HOME/android-sdk/"' >> ~/.bashrc
 echo 'export PATH="$PATH:$HOME/android-sdk/build-tools/34.0.4"' >> ~/.bashrc
 echo 'export PATH="$PATH:$HOME/android-sdk/platform-tools"' >> ~/.bashrc
 echo 'export PATH="$PATH:$HOME/android-sdk/flutter/bin"' >> ~/.bashrc
+echo 'export PATH="$PATH:$HOME/android-sdk/cmdline-tools/bin"' >> ~/.bashrc
+source ~/.bashrc
 ```
 
 IN YOUR BROWSER, OPEN THE VSCODE SERVER IP ON THE PORT 8080, THEN FOLLOW THIS STEPS
