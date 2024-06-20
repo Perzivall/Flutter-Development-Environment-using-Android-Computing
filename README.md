@@ -229,7 +229,7 @@ You can connect and debugging apps direcly in this device
    > 
    > The adb tcpip command only needs to be run once
    >
-   > O Comando ```adb reconnect offline``` pode ser util
+   > This command ```adb reconnect offline``` can'be util
     
 
 # ⚠️ For disabling PID Exited with signal 9
