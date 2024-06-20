@@ -90,15 +90,6 @@ SET PERMISSIONS TO EXECUTE SCRIPT
 chmod +x start.sh
 ```
 
-START AND STOP CODE SERVER TO CREATE INITIAL FILES
-```
-code-server
-```
-AWAIT 10 SECONDS AND STOP SERVICE
-```
-code-server stop
-```
-
 START SCRIPT 
 ```
 ./start.sh
