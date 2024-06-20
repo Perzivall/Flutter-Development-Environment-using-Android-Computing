@@ -110,10 +110,16 @@ May people know that you, whose name is Jehovah, You alone are the Most High ove
     killall node
     ```
 
-# 💻 Acess VSCode in a Browser computer
+# 💻 Acess VSCode in a Browser computer 
 
-    Now you have to able to access the IP address showing in terminal in our Browser, it's showing ip in the termux cli
-    example: http://192.168.1.105:8080
+> Now you have to able to access the IP address showing in terminal in our Browser, it's showing ip in the termux cli
+>    example: http://192.168.1.105:8080
+>
+
+* The cell phone and computer must be on the same network.
+
+* The computer can use a wired connection, but they must have IPs in the same range
+    
 
 1. Open the terminal-cli in VSCode and
     ```
