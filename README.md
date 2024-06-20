@@ -246,6 +246,7 @@ You can connect and debugging apps direcly in this device
 1. Compilation
    > Works only in debug mode
    >
+
    > Working to use release and profile
 
  
