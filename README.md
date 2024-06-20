@@ -38,6 +38,12 @@ May people know that you, whose name is Jehovah, You alone are the Most High ove
     proot-distro install debian
     ```
 
+4. Activate Wake-Lock
+   ```
+   termux-wake-lock
+   ```
+   > This command can be used to trigger a wakelock which causes Android not to go into deep sleep.
+
 # 🫚 Proot configuration
 
 1. Login in Proot enviroment distro
