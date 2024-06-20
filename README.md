@@ -241,6 +241,13 @@ You can connect and debugging apps direcly in this device
     adb shell settings put global settings_enable_monitor_phantom_procs false
     ```
 
+# 🤖 Know Issues
+
+1. Compilation
+   > Works only in debug mode
+        flutter run apk --release 
+
+
 # 🤗 Acknowledgments
 1. First of all
    > My god Jehova for give my life ♥
