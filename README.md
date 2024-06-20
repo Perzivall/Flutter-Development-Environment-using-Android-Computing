@@ -1,6 +1,6 @@
 # Flutter Web Development Environment using Android. 
 
-> Use Your smartphone processing tô programming flutter apps
+> Use Your smartphone processing to programming flutter apps
 
 > Made by Perzivall in Brazil 🇧🇷
 
