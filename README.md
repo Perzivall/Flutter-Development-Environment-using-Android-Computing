@@ -140,7 +140,7 @@ Que as pessoas saibam que tu, cujo nome é Jeová, Somente tu és o Altíssimo s
     1. Install the flutter extension on VSCode
     2. Click on the command-pallet in vscode and write "Flutter: New Project"
     3. Click on the bottom side popup "Download SDK" and select folder "/home/YOUR_USER/android-sdk/"
-    4. Wait the download is complete, then try create new Flutter project
+    4. Wait paciently to download is complete, then try create new Flutter project
     ```
 
 # TIPS
