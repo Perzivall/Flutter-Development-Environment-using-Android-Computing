@@ -2,9 +2,12 @@
 
 > Made by Perzivall in Brazil 🇧🇷
 
-> with love, Perzivall
+> with love, Perzivall 👨‍💻
 
 > Acess JW.ORG ❤️
+```
+Que as pessoas saibam que tu, cujo nome é Jeová, Somente tu és o Altíssimo sobre toda a terra.
+```
 
 # Termux configuration
 
