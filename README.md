@@ -1,5 +1,7 @@
 Flutter programming platform for use a android smartphone as server
 
+# Termux configuration
+
 Download and install Termux
 Acess and download: https://github.com/termux/termux-app/releases/
 
@@ -15,9 +17,11 @@ pkg install proot-distro -y
 proot-distro install debian
 ```
 
+# Proot configuration
+
 Login in PROOT enviroment distro
 ```
-proot-distro login debian --
+proot-distro login debian
 ```
 
 Update Packages Debian
@@ -95,7 +99,9 @@ START SCRIPT
 ./start.sh
 ```
 
-Now acess the IP address showing in terminal in our Browser
+# Acess VSCode in a Browser computer
+
+Now you have to able to access the IP address showing in terminal in our Browser, it's showing ip in the termux cli
 example: http://192.168.1.105:8080
 
 Create directory in /home/YOUR_USER/
@@ -124,7 +130,7 @@ echo 'export PATH="$PATH:$HOME/android-sdk/cmdline-tools/latest/bin"' >> ~/.bash
 source ~/.bashrc
 ```
 
-IN YOUR BROWSER, OPEN THE VSCODE SERVER IP ON THE PORT 8080, THEN FOLLOW THIS STEPS
+> IN YOUR BROWSER, OPEN THE VSCODE SERVER IP ON THE PORT 8080, THEN FOLLOW THIS STEPS
 ```
 1. Install the flutter extension on VSCode
 2. Click on the command vscode and write "Flutter: New Project"
@@ -132,7 +138,7 @@ IN YOUR BROWSER, OPEN THE VSCODE SERVER IP ON THE PORT 8080, THEN FOLLOW THIS ST
 4. Wait the donwload complete, then create new Flutter project
 ```
 
-#TIPS
+# TIPS
 For connect and run apps android on the device
 If Android +11
 -Open the debugger settings on the device, find wireless debugging and find Pair device with pairing code
@@ -143,7 +149,7 @@ If Android +11
     
 Then digit the code pairing
 
-#For disabling PID Exited with signal 9, connect adb device in the termux device
+# For disabling PID Exited with signal 9, connect adb device in the termux device
 ```
 adb shell "/system/bin/device_config set_sync_disabled_for_tests persistent"
 adb shell "/system/bin/device_config put activity_manager max_phantom_processes 2147483647"
