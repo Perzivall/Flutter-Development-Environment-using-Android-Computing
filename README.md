@@ -3,15 +3,17 @@ Flutter programming platform for use a android smartphone as server
 # Termux configuration
 
 Download and install Termux
-Acess and download: https://github.com/termux/termux-app/releases/
+- In your android browser
+    - Acess and download: https://github.com/termux/termux-app/releases/
 
-Update termux
+Open Termux and
+- Update termux
 ```
 pkg update -y
 pkg upgrade -y
 ```
 
-Install PROOT
+- Install PROOT
 ```
 pkg install proot-distro -y
 proot-distro install debian
@@ -39,9 +41,9 @@ Add new user in VISUDO
 visudo
 
 ```
-
-Then Insert in the following line in
-#User privilege specification
+> Then Insert in the following line in
+>
+> #User privilege specification
 
 ```
 YOUR_USER ALL=(ALL:ALL) ALL
@@ -68,7 +70,7 @@ Install code-server
 curl -fsSL https://code-server.dev/install.sh | sh
 ```
 
-CREATE START SCRIPT NAMED "start.sh"
+CREATE START SCRIPT AND NAMED AS "start.sh"
 ```
 #!/bin/bash
 
@@ -150,25 +152,24 @@ source ~/.bashrc
 ```
 
 # TIPS
-For connect and run apps android on the device
-If Android +11
--Open the debugger settings on the device, find wireless debugging and find Pair device with pairing code
+     For connect and run apps android on the device
+     if Android +11
+Open the debugger settings on the device, find wireless debugging and find Pair device with pairing code
     
-    
-    adb pair IP_ADDRESS:PORT
+```    
+adb pair IP_ADDRESS:PORT
+```
 
-    
-Then digit the code pairing
+- Then digit the code pairing
 
 # For disabling PID Exited with signal 9, connect adb device in the termux device
 ```
 adb shell "/system/bin/device_config set_sync_disabled_for_tests persistent"
 adb shell "/system/bin/device_config put activity_manager max_phantom_processes 2147483647"
 ```
-Opcional
+> Opcional
 ```
 adb shell settings put global settings_enable_monitor_phantom_procs false
 ```
 
-#BUGS
-    For build compiling works correctly, in file > Android > 
+
