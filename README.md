@@ -245,8 +245,10 @@ You can connect and debugging apps direcly in this device
 
 1. Compilation
    > Works only in debug mode
-        flutter run apk --release 
-
+   
+   ```
+   flutter run apk --release 
+   ```
 
 # 🤗 Acknowledgments
 1. First of all
