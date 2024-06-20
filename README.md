@@ -206,7 +206,7 @@ You can connect and debugging apps direcly in this device
    ```
    > Then digit the code pairing, and
    ```
-   adb connect IP_ADDRESS:PORT
+   adb connect IP_ADDRESS:5555
    ```
 
 2. If android smartphone version =< Android 10
