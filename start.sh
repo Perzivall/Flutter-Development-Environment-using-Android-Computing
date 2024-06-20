@@ -4,7 +4,7 @@
 ip_address=$(ifconfig | grep 'inet ' | awk '{print $2}' | grep '192' | head -n 1)
 
 # Caminho do arquivo de configuração
-file_path="/root/.config/code-server/config.yaml"
+file_path="/home/$(whoami)/.config/code-server/config.yaml"
 
 # Verificando se a variável ip_address está vazia
 if [ -z "$ip_address" ]; then
@@ -24,5 +24,6 @@ echo "Ativando servidor"
 nohup code-server & disown
                   
 # Informando o IP de acesso
-echo "Acesse o IP http://$ip_address:8080"
+echo "-----------------------------------------"
+echo "Now access in your browser http://$ip_address:8080"
 echo "-----------------------------------------"
