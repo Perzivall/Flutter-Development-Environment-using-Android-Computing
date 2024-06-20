@@ -250,6 +250,7 @@ You can connect and debugging apps direcly in this device
    > Working to use release and profile
 
  
+   > To build and run app, create flutter project and
 
    ```
    flutter run --debug
