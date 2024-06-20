@@ -34,7 +34,7 @@ May people know that you, whose name is Jehovah, You alone are the Most High ove
 
 # Proot configuration
 
-1. Login in PROOT enviroment distro
+1. Login in Proot enviroment distro
     ```
     proot-distro login debian
     ```
