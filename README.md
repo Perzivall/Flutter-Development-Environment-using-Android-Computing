@@ -92,9 +92,13 @@ Que as pessoas saibam que tu, cujo nome é Jeová, Somente tu és o Altíssimo s
     chmod +x configure_password.sh
     ```
 
-11. Start script 
+11. Start enviroment 
     ```
     ./start.sh
+    ```
+12. Stop enviroment
+    ```
+    killall node
     ```
 
 # Acess VSCode in a Browser computer
