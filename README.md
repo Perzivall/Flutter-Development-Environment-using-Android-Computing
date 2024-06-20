@@ -15,7 +15,7 @@ May people know that you, whose name is Jehovah, You alone are the Most High ove
 ```
 
 # ☕ Help me to buy a coffe
-- Thank'you for yours contribuition
+- Thank'you for yours contribuitions
 - https://ko-fi.com/perzivall
 
 
