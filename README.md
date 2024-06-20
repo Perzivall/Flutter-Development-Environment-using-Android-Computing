@@ -225,4 +225,15 @@ adb shell "/system/bin/device_config put activity_manager max_phantom_processes 
 adb shell settings put global settings_enable_monitor_phantom_procs false
 ```
 
+# Acknowledgments
+1. First of all
+   > My god Jehova for give my life ♥
+   > 
+   > My wife Josiara for all her love ♥
+   > 
+   > My Daughtter Manuella ♥ 
+   
+2.  lzhiyong for compile build-tools and sdk for architecture arm64
+    > https://github.com/lzhiyong/android-sdk-tools
+
 
