@@ -156,6 +156,8 @@ You can connect and debugging apps direcly in this device
    adb connect IP_ADDRESS:PORT
    ```
 
+> [!WARNING]
+> In some devices, the termux Crash "PID Exited with signal 9"
 # For disabling PID Exited with signal 9, connect adb device in the termux device
 ```
 adb shell "/system/bin/device_config set_sync_disabled_for_tests persistent"
