@@ -22,7 +22,7 @@ proot-distro login debian --
 
 Update Packages Debian
 ```
-apt update -y && apt upgrade -y && apt install wget git sudo openjdk-17-jdk-headless sudo vim -y
+apt update -y && apt upgrade -y && apt install wget git sudo openjdk-17-jdk-headless sudo vim curl git unzip xz-utils zip libglu1-mesa libc6:arm64 libncurses5:arm64 libstdc++6:arm64 libbz2-1.0:arm64 -y
 ```
 
 Add new user in VISUDO
@@ -122,4 +122,13 @@ IN YOUR BROWSER, OPEN THE VSCODE SERVER IP ON THE PORT 8080, THEN FOLLOW THIS ST
 2. Click on the command vscode and write "Flutter: New Project"
 3. Click on the bottom side popup "Download SDK" and select folder "/home/YOUR_USER/android-sdk/"
 4. Wait the donwload complete, then create new Flutter project
-``` 
+```
+
+# TIPS
+    - For connect and run apps android on the device
+    If Android +11
+    Open the debugger settings on the device, find wireless debugging and find Pair device with pairing code
+    ```
+    adb pair IP_ADDRESS:PORT
+    ```
+    Then digit the code pairing
