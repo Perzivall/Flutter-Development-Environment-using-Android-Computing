@@ -83,11 +83,13 @@ Que as pessoas saibam que tu, cujo nome é Jeová, Somente tu és o Altíssimo s
     
     ```
     wget https://github.com/Perzivall/Flutter-Server-Android-arm64/releases/download/34.0.4/start.sh
+    wget https://github.com/Perzivall/Flutter-Web-Development-Environment-using-Android/releases/download/34.0.4/configure_password.sh
     ```
 
-10. Set execution permissions
+10. Set execution permissions and create first password to acess the Web Enviroment
     ```
     chmod +x start.sh
+    chmod +x configure_password.sh
     ```
 
 11. Start script 
