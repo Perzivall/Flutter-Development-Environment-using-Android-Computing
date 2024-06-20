@@ -22,7 +22,7 @@ proot-distro login debian --
 
 Update Packages Debian
 ```
-apt update -y && apt upgrade -y && apt install wget git sudo openjdk-17-jdk-headless sudo vim curl git unzip xz-utils zip libglu1-mesa libc6:arm64 libncurses5:arm64 libstdc++6:arm64 libbz2-1.0:arm64 -y
+apt update -y && apt upgrade -y && apt install wget git sudo openjdk-17-jdk-headless sudo vim curl git unzip xz-utils zip libglu1-mesa libc6:arm64 libncurses5:arm64 libstdc++6:arm64 libbz2-1.0:arm64 clang cmake git ninja-build pkg-config libgtk-3-dev liblzma-dev libstdc++-12-dev -y
 ```
 
 Add new user in VISUDO
@@ -105,9 +105,12 @@ cd /home/$(whoami)/android-sdk
 wget https://github.com/Perzivall/Flutter-Server-Android-arm64/releases/download/34.0.4/build-tools-34.0.4-aarch64.tar.xz &&
 wget https://github.com/Perzivall/Flutter-Server-Android-arm64/releases/download/34.0.4/platform-tools-34.0.4-aarch64.tar.xz &&
 wget https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip &&
-unzip commandlinetools-linux-11076708_latest.zip &&
 tar -xf build-tools-34.0.4-aarch64.tar.xz &&
-tar -xf platform-tools-34.0.4-aarch64.tar.xz
+tar -xf platform-tools-34.0.4-aarch64.tar.xz &&
+unzip commandlinetools-linux-11076708_latest.zip &&
+cd cmdline-tools &&
+mkdir latest &&
+mv * latest
 ```
 
 Adicione variaveis ao PATH 
@@ -117,7 +120,7 @@ echo 'export ANDROID_HOME="$HOME/android-sdk/"' >> ~/.bashrc
 echo 'export PATH="$PATH:$HOME/android-sdk/build-tools/34.0.4"' >> ~/.bashrc
 echo 'export PATH="$PATH:$HOME/android-sdk/platform-tools"' >> ~/.bashrc
 echo 'export PATH="$PATH:$HOME/android-sdk/flutter/bin"' >> ~/.bashrc
-echo 'export PATH="$PATH:$HOME/android-sdk/cmdline-tools/bin"' >> ~/.bashrc
+echo 'export PATH="$PATH:$HOME/android-sdk/cmdline-tools/latest/bin"' >> ~/.bashrc
 source ~/.bashrc
 ```
 
@@ -139,3 +142,10 @@ If Android +11
 
     
 Then digit the code pairing
+
+> For disabling PID Exited with signal 9, connect adb device in the termux device
+    adb shell "/system/bin/device_config set_sync_disabled_for_tests persistent"
+    adb shell "/system/bin/device_config put activity_manager max_phantom_processes 2147483647"
+
+#BUGS
+    For build compiling works correctly, in file > Android > 
