@@ -1,4 +1,4 @@
-# Flutter Web Development Environment using Android (Native Performance, not virtualized). 
+# Flutter Web Development Environment using Android. 
 
 > Use Your smartphone processing to programming flutter apps with native performance!
 
