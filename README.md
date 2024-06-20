@@ -186,7 +186,7 @@ May people know that you, whose name is Jehovah, You alone are the Most High ove
 # Use your smartphone to run compiled apps
 You can connect and debugging apps direcly in this device
 
-1. If android >= Android 11 OS
+1. If android smartphone version >= Android 11
 
     > Open the debugger settings on the device, find wireless debugging and find Pair device with pairing code
    ```    
@@ -197,7 +197,7 @@ You can connect and debugging apps direcly in this device
    adb connect IP_ADDRESS:PORT
    ```
 
-2. If android =< Android 10 OS
+2. If android smartphone version =< Android 10
    > With your android phone debugging active, connect your phone in a computer, download adb windows tools and
    ```
     adb tcpip 5555
