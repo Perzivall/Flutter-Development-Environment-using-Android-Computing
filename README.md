@@ -2,75 +2,73 @@ Flutter programming platform for use a android smartphone as server
 
 # Termux configuration
 
-Download and install Termux
-- In your android browser
+1. Download and install Termux
+    - In your android browser
     - Acess and download: https://github.com/termux/termux-app/releases/
 
-Open Termux and
-- Update termux
-```
-pkg update -y
-pkg upgrade -y
-```
+2. Open Termux and update
+    ```
+    pkg update -y &&
+    pkg upgrade -y
+    ```
 
-- Install PROOT
-```
-pkg install proot-distro -y
-proot-distro install debian
-```
+3. Install Proot
+    ```
+    pkg install proot-distro -y &&
+    proot-distro install debian
+    ```
 
 # Proot configuration
 
-Login in PROOT enviroment distro
-```
-proot-distro login debian
-```
+1. Login in PROOT enviroment distro
+    ```
+    proot-distro login debian
+    ```
 
-Change root password
-```
-passwd
-```
+2. Change root password
+    ```
+    passwd
+    ```
 
-Update Packages Debian
-```
-apt update -y && apt upgrade -y && apt install wget git sudo openjdk-17-jdk-headless sudo vim curl git unzip xz-utils zip libglu1-mesa libc6:arm64 libncurses5:arm64 libstdc++6:arm64 libbz2-1.0:arm64 clang cmake git ninja-build pkg-config libgtk-3-dev liblzma-dev libstdc++-12-dev -y
-```
+3. Update Packages Debian
+    ```
+    apt update -y && apt upgrade -y && apt install wget git sudo openjdk-17-jdk-headless sudo vim curl git unzip xz-utils zip libglu1-mesa libc6:arm64 libncurses5:arm64 libstdc++6:arm64 libbz2-1.0:arm64 clang cmake git ninja-build pkg-config libgtk-3-dev liblzma-dev libstdc++-12-dev -y
+    ```
 
-Add new user in VISUDO
-```
-visudo
+4. Add new user in VISUDO
+    ```
+    visudo
+    ```
+   > Then Insert in the following line in
+   > #User privilege specification
 
-```
-> Then Insert in the following line in
->
-> #User privilege specification
+    ```
+    YOUR_USER ALL=(ALL:ALL) ALL
+    ```
 
-```
-YOUR_USER ALL=(ALL:ALL) ALL
-```
+5. Create user
+    ```
+    useradd -m -s /bin/bash YOUR_USER && echo "YOUR_USER:YOUR_PASSWORD" | chpasswd && usermod -aG sudo YOUR_USER
 
-Create user
-```
-useradd -m -s /bin/bash YOUR_USER && echo "YOUR_USER:YOUR_PASSWORD" | chpasswd && usermod -aG sudo YOUR_USER
+    ```
 
-```
+6. Access the new YOUR_USER
+    ```
+    su YOUR_USER
+    ```
 
-Access the new YOUR_USER
-```
-su YOUR_USER
-```
+7. Acess the YOUR_USER path home
+    ```
+    cd $HOME
+    ```
 
-Acess the YOUR_USER path home
-```
-cd $HOME
-```
+8. Install code-server
+    ```
+    curl -fsSL https://code-server.dev/install.sh | sh
+    ```
 
-Install code-server
-```
-curl -fsSL https://code-server.dev/install.sh | sh
-```
-
-CREATE START SCRIPT AND NAMED AS "start.sh"
+9. CREATE START SCRIPT AND NAMED AS "start.sh"
+    
 ```
 #!/bin/bash
 
@@ -102,65 +100,68 @@ echo "Acesse o IP http://$ip_address:8080"
 echo "-----------------------------------------"
 ```
 
-SET PERMISSIONS TO EXECUTE SCRIPT
-```
-chmod +x start.sh
-```
+10. Set execution permissions
+    ```
+    chmod +x start.sh
+    ```
 
-START SCRIPT 
-```
-./start.sh
-```
+11. Start script 
+    ```
+    ./start.sh
+    ```
 
 # Acess VSCode in a Browser computer
 
-Now you have to able to access the IP address showing in terminal in our Browser, it's showing ip in the termux cli
-example: http://192.168.1.105:8080
+    Now you have to able to access the IP address showing in terminal in our Browser, it's showing ip in the termux cli
+    example: http://192.168.1.105:8080
 
-Create directory in /home/YOUR_USER/
-```
-mkdir /home/$(whoami)/android-sdk
-cd /home/$(whoami)/android-sdk
-wget https://github.com/Perzivall/Flutter-Server-Android-arm64/releases/download/34.0.4/build-tools-34.0.4-aarch64.tar.xz &&
-wget https://github.com/Perzivall/Flutter-Server-Android-arm64/releases/download/34.0.4/platform-tools-34.0.4-aarch64.tar.xz &&
-wget https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip &&
-tar -xf build-tools-34.0.4-aarch64.tar.xz &&
-tar -xf platform-tools-34.0.4-aarch64.tar.xz &&
-unzip commandlinetools-linux-11076708_latest.zip &&
-cd cmdline-tools &&
-mkdir latest &&
-mv * latest
-```
+1. Open the terminal-cli in VSCode and
+    ```
+    mkdir /home/$(whoami)/android-sdk
+    cd /home/$(whoami)/android-sdk
+    wget https://github.com/Perzivall/Flutter-Server-Android-arm64/releases/download/34.0.4/build-tools-34.0.4-aarch64.tar.xz &&
+    wget https://github.com/Perzivall/Flutter-Server-Android-arm64/releases/download/34.0.4/platform-tools-34.0.4-aarch64.tar.xz &&
+    wget https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip &&
+    tar -xf build-tools-34.0.4-aarch64.tar.xz &&
+    tar -xf platform-tools-34.0.4-aarch64.tar.xz &&
+    unzip commandlinetools-linux-11076708_latest.zip &&
+    cd cmdline-tools &&
+    mkdir latest &&
+    mv * latest
+    ```
 
-Adicione variaveis ao PATH 
-```
-echo 'export ANDROID_SDK_ROOT="$HOME/android-sdk/"' >> ~/.bashrc
-echo 'export ANDROID_HOME="$HOME/android-sdk/"' >> ~/.bashrc
-echo 'export PATH="$PATH:$HOME/android-sdk/build-tools/34.0.4"' >> ~/.bashrc
-echo 'export PATH="$PATH:$HOME/android-sdk/platform-tools"' >> ~/.bashrc
-echo 'export PATH="$PATH:$HOME/android-sdk/flutter/bin"' >> ~/.bashrc
-echo 'export PATH="$PATH:$HOME/android-sdk/cmdline-tools/latest/bin"' >> ~/.bashrc
-source ~/.bashrc
-```
+2. Add variables in the $PATH 
+    ```
+    echo 'export ANDROID_SDK_ROOT="$HOME/android-sdk/"' >> ~/.bashrc
+    echo 'export ANDROID_HOME="$HOME/android-sdk/"' >> ~/.bashrc
+    echo 'export PATH="$PATH:$HOME/android-sdk/build-tools/34.0.4"' >> ~/.bashrc
+    echo 'export PATH="$PATH:$HOME/android-sdk/platform-tools"' >> ~/.bashrc
+    echo 'export PATH="$PATH:$HOME/android-sdk/flutter/bin"' >> ~/.bashrc
+    echo 'export PATH="$PATH:$HOME/android-sdk/cmdline-tools/latest/bin"' >> ~/.bashrc
+    source ~/.bashrc
+    ```
 
-> IN YOUR BROWSER, OPEN THE VSCODE SERVER IP ON THE PORT 8080, THEN FOLLOW THIS STEPS
-```
-1. Install the flutter extension on VSCode
-2. Click on the command vscode and write "Flutter: New Project"
-3. Click on the bottom side popup "Download SDK" and select folder "/home/YOUR_USER/android-sdk/"
-4. Wait the donwload complete, then create new Flutter project
-```
+3. IN YOUR BROWSER, OPEN THE VSCODE SERVER IP ON THE PORT 8080, THEN FOLLOW THIS STEPS
+
+    ```
+    1. Install the flutter extension on VSCode
+    2. Click on the command-pallet in vscode and write "Flutter: New Project"
+    3. Click on the bottom side popup "Download SDK" and select folder "/home/YOUR_USER/android-sdk/"
+    4. Wait the download is complete, then try create new Flutter project
+    ```
 
 # TIPS
-     For connect and run apps android on the device
-     if Android +11
-Open the debugger settings on the device, find wireless debugging and find Pair device with pairing code
-    
-```    
-adb pair IP_ADDRESS:PORT
-```
+You can connect and debugging apps direcly in this device
 
-- Then digit the code pairing
+1. If android +11 OS
+    Open the debugger settings on the device, find wireless debugging and find Pair device with pairing code
+   ```    
+   adb pair IP_ADDRESS:PORT
+   ```
+   > Then digit the code pairing, and
+   ```
+   adb connect IP_ADDRESS:PORT
+   ```
 
 # For disabling PID Exited with signal 9, connect adb device in the termux device
 ```
