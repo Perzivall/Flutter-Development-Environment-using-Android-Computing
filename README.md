@@ -116,7 +116,7 @@ May people know that you, whose name is Jehovah, You alone are the Most High ove
 >    example: http://192.168.1.105:8080
 >
 
-* The cell phone and computer must be on the same network.
+* The smartphone and computer must be on the same network.
 
 * The computer can use a wired connection, but they must have IPs in the same range
     
