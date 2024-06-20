@@ -121,7 +121,7 @@ May people know that you, whose name is Jehovah, You alone are the Most High ove
 * The computer can use a wired connection, but they must have IPs in the same range
     
 
-1. After access the IP Address in a browser, open the terminal-cli in VSCode WEB and
+1. After access the IP Address in a browser, open the terminal-cli in VSCode Web and
     ```
     mkdir /home/$(whoami)/android-sdk
     cd /home/$(whoami)/android-sdk
