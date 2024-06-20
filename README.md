@@ -143,6 +143,43 @@ Que as pessoas saibam que tu, cujo nome é Jeová, Somente tu és o Altíssimo s
     4. Wait paciently to download is complete, then try create new Flutter project
     ```
 
+# After create Flutter Project
+> [!Warning]
+> For flutter compile correcly android apps, follow this steps
+
+1. Open the file Android > gradle.properties and add this line in final of file
+   ```
+   android.aapt2FromMavenOverride=/home/YOUR_USER/android-sdk/build-tools/34.0.4/aapt2
+   ```
+2. Open the Android > app > build.gradle and add configure buildToolsVersion to 34.0.4
+   
+   example
+   ```
+       defaultConfig {
+        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
+        applicationId = "com.example.flutter_application_1"
+        // You can update the following values to match your application needs.
+        // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-gradle-build-configuration.
+        minSdk = flutter.minSdkVersion
+
+        // ADD THIS LINE
+        buildToolsVersion = "34.0.4" 
+
+        targetSdk = flutter.targetSdkVersion
+        versionCode = flutterVersionCode.toInteger()
+        versionName = flutterVersionName
+    }
+   ```
+
+    ```
+    buildToolsVersion = "34.0.4"
+    ```
+
+3. In the first run, do you need to accept the sdkmanager licenses. Open the terminal and
+   ```
+   sdkmanager --licenses
+   ```
+
 # TIPS
 You can connect and debugging apps direcly in this device
 
