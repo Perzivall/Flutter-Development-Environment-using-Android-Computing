@@ -43,6 +43,11 @@ useradd -m -s /bin/bash USUARIO && echo "USUARIO:SENHA" | chpasswd && usermod -a
 
 ```
 
+Access the new USUARIO
+```
+su USUARIO
+```
+
 Install code-server
 ```
 curl -fsSL https://code-server.dev/install.sh | sh
