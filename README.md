@@ -116,6 +116,7 @@ echo 'export PATH="$PATH:$HOME/android-sdk/build-tools/34.0.4"' >> ~/.bashrc
 echo 'export PATH="$PATH:$HOME/android-sdk/platform-tools"' >> ~/.bashrc
 echo 'export PATH="$PATH:$HOME/android-sdk/flutter/bin"' >> ~/.bashrc
 ```
+
 IN YOUR BROWSER, OPEN THE VSCODE SERVER IP ON THE PORT 8080, THEN FOLLOW THIS STEPS
 ```
 1. Install the flutter extension on VSCode
@@ -125,9 +126,10 @@ IN YOUR BROWSER, OPEN THE VSCODE SERVER IP ON THE PORT 8080, THEN FOLLOW THIS ST
 ```
 
 # TIPS
-    - For connect and run apps android on the device
+     For connect and run apps android on the device
     If Android +11
     Open the debugger settings on the device, find wireless debugging and find Pair device with pairing code
+    
     ```
     adb pair IP_ADDRESS:PORT
     ```
