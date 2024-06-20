@@ -226,18 +226,20 @@ You can connect and debugging apps direcly in this device
    > O Comando ```adb reconnect offline``` pode ser util
     
 
-# ⚠️ For disabling PID Exited with signal 9, connect adb device in the termux device
+# ⚠️ For disabling PID Exited with signal 9
 > [!Warning]
 > In someone devices, the termux crashes with code "PID Exited with signal 9"
 > Execute this command to solve
-```
-adb shell "/system/bin/device_config set_sync_disabled_for_tests persistent"
-adb shell "/system/bin/device_config put activity_manager max_phantom_processes 2147483647"
-```
-> Opcional
-```
-adb shell settings put global settings_enable_monitor_phantom_procs false
-```
+
+1. In your VSCode Web browser, open the terminal, connect your device via adb and type
+    ```
+    adb shell "/system/bin/device_config set_sync_disabled_for_tests persistent"
+    adb shell "/system/bin/device_config put activity_manager max_phantom_processes 2147483647"
+    ```
+    > Opcional
+    ```
+    adb shell settings put global settings_enable_monitor_phantom_procs false
+    ```
 
 # 🤗 Acknowledgments
 1. First of all
