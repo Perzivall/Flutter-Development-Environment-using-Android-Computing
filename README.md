@@ -111,14 +111,14 @@ May people know that you, whose name is Jehovah, You alone are the Most High ove
     ```
 
 # 💻 Acess VSCode in a Browser computer 
-
 > Now you have to able to access the IP address showing in terminal in our Browser, it's showing ip in the termux cli
->    example: http://192.168.1.105:8080
 >
+>    example: http://192.168.1.105:8080
 
-* The smartphone and computer must be on the same network.
-
-* The computer can use a wired connection, but they must have IPs in the same range
+> [!Warning]
+>    The smartphone and computer must be on the same network.
+>     
+>    The computer can use a wired connection, but they must have IPs in the same range
     
 
 1. After access the IP Address in a browser, open the terminal-cli in VSCode Web and
