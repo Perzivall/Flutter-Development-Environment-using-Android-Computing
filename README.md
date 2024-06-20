@@ -119,7 +119,8 @@ Que as pessoas saibam que tu, cujo nome é Jeová, Somente tu és o Altíssimo s
     unzip commandlinetools-linux-11076708_latest.zip &&
     cd cmdline-tools &&
     mkdir latest &&
-    mv * latest
+    mv * latest &&
+    cd $HOME
     ```
 
 2. Add variables in the $PATH 
