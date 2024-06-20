@@ -24,7 +24,7 @@ May people know that you, whose name is Jehovah, You alone are the Most High ove
 1. Download and install Termux
     - In your android browser
     - Acess and download: https://github.com/termux/termux-app/releases/
-    - Recomended [Click to download, used in my tests](https://github.com/termux/termux-app/releases/download/v0.118.1/termux-app_v0.118.1+github-debug_arm64-v8a.apk)
+    - Recomended [Click to download](https://github.com/termux/termux-app/releases/download/v0.118.1/termux-app_v0.118.1+github-debug_arm64-v8a.apk)
 
 2. Open Termux and update
     ```
