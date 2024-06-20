@@ -10,6 +10,9 @@
 ```
 Que as pessoas saibam que tu, cujo nome é Jeová, Somente tu és o Altíssimo sobre toda a terra.
 ```
+```
+May people know that you, whose name is Jehovah, You alone are the Most High over all the earth.
+```
 
 # Termux configuration
 
