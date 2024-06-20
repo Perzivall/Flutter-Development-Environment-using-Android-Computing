@@ -143,9 +143,10 @@ If Android +11
     
 Then digit the code pairing
 
-> For disabling PID Exited with signal 9, connect adb device in the termux device
-    adb shell "/system/bin/device_config set_sync_disabled_for_tests persistent"
+#For disabling PID Exited with signal 9, connect adb device in the termux device
+``` adb shell "/system/bin/device_config set_sync_disabled_for_tests persistent"
     adb shell "/system/bin/device_config put activity_manager max_phantom_processes 2147483647"
+```
 
 #BUGS
     For build compiling works correctly, in file > Android > 
