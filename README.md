@@ -186,7 +186,7 @@ May people know that you, whose name is Jehovah, You alone are the Most High ove
 # TIPS
 You can connect and debugging apps direcly in this device
 
-1. If android +11 OS
+1. If android >= Android 11 OS
     Open the debugger settings on the device, find wireless debugging and find Pair device with pairing code
    ```    
    adb pair IP_ADDRESS:PORT
@@ -195,6 +195,19 @@ You can connect and debugging apps direcly in this device
    ```
    adb connect IP_ADDRESS:PORT
    ```
+
+2. If android =< Android 10 OS
+   With your android phone debugging active, connect your phone in a computer, download adb windows tools and
+   ```
+    adb tcpip 5555
+   ```
+   > Then check your IP Address in Android Settings > Wifi , And in your VSCode terminal, type
+   ```
+   adb connect IP_ADDRESS:PORT
+   ```
+   > For connect your smartphone in VSCode enviroment, use always this adb connect command
+   > The adb tcpip command only needs to be run once
+    
 
 # For disabling PID Exited with signal 9, connect adb device in the termux device
 > [!Warning]
