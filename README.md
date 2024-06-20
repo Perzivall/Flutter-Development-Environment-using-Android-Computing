@@ -159,6 +159,7 @@ You can connect and debugging apps direcly in this device
 # For disabling PID Exited with signal 9, connect adb device in the termux device
 > [!Warning]
 > In someone devices, the termux Crash "PID Exited with signal 9"
+> Execute this command to solve
 ```
 adb shell "/system/bin/device_config set_sync_disabled_for_tests persistent"
 adb shell "/system/bin/device_config put activity_manager max_phantom_processes 2147483647"
