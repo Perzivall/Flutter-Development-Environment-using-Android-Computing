@@ -248,8 +248,10 @@ You can connect and debugging apps direcly in this device
    >
    > Working to use release and profile
 
+ 
+
    ```
-   flutter run apk --release 
+   flutter run --debug
    ```
 
 # 🤗 Acknowledgments
