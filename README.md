@@ -55,7 +55,7 @@ May people know that you, whose name is Jehovah, You alone are the Most High ove
     apt update -y && apt upgrade -y && apt install wget git sudo openjdk-17-jdk-headless sudo vim curl git unzip xz-utils zip libglu1-mesa libc6:arm64 libncurses5:arm64 libstdc++6:arm64 libbz2-1.0:arm64 clang cmake git ninja-build pkg-config libgtk-3-dev liblzma-dev libstdc++-12-dev -y
     ```
 
-4. Add new user in VISUDO
+4. Add new user in sudoers file
     ```
     visudo
     ```
