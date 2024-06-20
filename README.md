@@ -22,7 +22,7 @@ proot-distro login debian --
 
 Update Packages Debian
 ```
-apt update -y && apt upgrade -y && sudo apt install wget git openjdk-17-jdk-headless -y
+apt update -y && apt upgrade -y && sudo apt install wget git sudo openjdk-17-jdk-headless -y
 ```
 
 Create user
