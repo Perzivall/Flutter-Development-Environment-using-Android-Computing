@@ -89,7 +89,8 @@ Que as pessoas saibam que tu, cujo nome é Jeová, Somente tu és o Altíssimo s
 10. Set execution permissions and create first password to acess the Web Enviroment
     ```
     chmod +x start.sh
-    chmod +x configure_password.sh
+    chmod +x configure_password.sh &&
+    ./configure_password.sh
     ```
 
 11. For Start enviroment 
