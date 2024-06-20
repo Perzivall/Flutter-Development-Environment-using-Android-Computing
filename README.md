@@ -125,12 +125,13 @@ IN YOUR BROWSER, OPEN THE VSCODE SERVER IP ON THE PORT 8080, THEN FOLLOW THIS ST
 4. Wait the donwload complete, then create new Flutter project
 ```
 
-# TIPS
-     For connect and run apps android on the device
+TIPS
+    For connect and run apps android on the device
     If Android +11
     Open the debugger settings on the device, find wireless debugging and find Pair device with pairing code
     
     ```
     adb pair IP_ADDRESS:PORT
     ```
+    
     Then digit the code pairing
