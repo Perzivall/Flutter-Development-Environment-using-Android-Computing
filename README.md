@@ -40,7 +40,8 @@ Flutter programming platform for use a android smartphone as server
     visudo
     ```
    > Then Insert in the following line in
-   > #User privilege specification
+    >
+   >  #User privilege specification
 
     ```
     YOUR_USER ALL=(ALL:ALL) ALL
