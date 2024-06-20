@@ -92,11 +92,11 @@ Que as pessoas saibam que tu, cujo nome é Jeová, Somente tu és o Altíssimo s
     chmod +x configure_password.sh
     ```
 
-11. Start enviroment 
+11. For Start enviroment 
     ```
     ./start.sh
     ```
-12. Stop enviroment
+12. For Stop enviroment
     ```
     killall node
     ```
