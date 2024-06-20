@@ -1,4 +1,8 @@
-Flutter programming platform for use a android smartphone as server
+Flutter programming platform for use a android smartphone as web-server enviroment.
+
+Made by Perzivall in Brazil 🇧🇷
+with love, Perzivall
+Acess JW.ORG ❤️
 
 # Termux configuration
 
