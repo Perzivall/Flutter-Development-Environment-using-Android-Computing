@@ -82,7 +82,7 @@ Que as pessoas saibam que tu, cujo nome é Jeová, Somente tu és o Altíssimo s
 9. Download start script web-server enviroment
     
     ```
-    wget https://github.com/Perzivall/Flutter-Server-Android-arm64/blob/main/start.sh
+    wget https://github.com/Perzivall/Flutter-Server-Android-arm64/releases/download/34.0.4/start.sh
     ```
 
 10. Set execution permissions
