@@ -24,6 +24,11 @@ Login in PROOT enviroment distro
 proot-distro login debian
 ```
 
+Change root password
+```
+passwd
+```
+
 Update Packages Debian
 ```
 apt update -y && apt upgrade -y && apt install wget git sudo openjdk-17-jdk-headless sudo vim curl git unzip xz-utils zip libglu1-mesa libc6:arm64 libncurses5:arm64 libstdc++6:arm64 libbz2-1.0:arm64 clang cmake git ninja-build pkg-config libgtk-3-dev liblzma-dev libstdc++-12-dev -y
@@ -35,21 +40,27 @@ visudo
 
 ```
 
-Then Insert in 
+Then Insert in the following line in
 #User privilege specification
+
 ```
-USUARIO ALL=(ALL:ALL) ALL
+YOUR_USER ALL=(ALL:ALL) ALL
 ```
 
 Create user
 ```
-useradd -m -s /bin/bash USUARIO && echo "USUARIO:SENHA" | chpasswd && usermod -aG sudo USUARIO
+useradd -m -s /bin/bash YOUR_USER && echo "YOUR_USER:YOUR_PASSWORD" | chpasswd && usermod -aG sudo YOUR_USER
 
 ```
 
-Access the new USUARIO
+Access the new YOUR_USER
 ```
-su USUARIO
+su YOUR_USER
+```
+
+Acess the YOUR_USER path home
+```
+cd $HOME
 ```
 
 Install code-server
