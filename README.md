@@ -183,7 +183,7 @@ May people know that you, whose name is Jehovah, You alone are the Most High ove
    sdkmanager --licenses
    ```
 
-# Use your properly smartphone to run compiled apps
+# Use your smartphone to run compiled apps
 You can connect and debugging apps direcly in this device
 
 1. If android >= Android 11 OS
