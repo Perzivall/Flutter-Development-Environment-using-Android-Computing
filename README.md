@@ -1,6 +1,6 @@
-# Flutter Web Development Environment using Android. 
+# Flutter Web Development Environment using Android (Native Performance, not virtualized). 
 
-> Use Your smartphone processing to programming flutter apps
+> Use Your smartphone processing to programming flutter apps with native performance!
 
 > Made by Perzivall in Brazil 🇧🇷
 
