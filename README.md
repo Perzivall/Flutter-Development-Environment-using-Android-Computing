@@ -222,6 +222,8 @@ You can connect and debugging apps direcly in this device
    > For connect your smartphone in VSCode enviroment, use always this adb connect command
    > 
    > The adb tcpip command only needs to be run once
+   >
+   > O Comando ```adb reconnect offline``` pode ser util
     
 
 # ⚠️ For disabling PID Exited with signal 9, connect adb device in the termux device
