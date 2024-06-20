@@ -22,7 +22,19 @@ proot-distro login debian --
 
 Update Packages Debian
 ```
-apt update -y && apt upgrade -y && sudo apt install wget git sudo openjdk-17-jdk-headless -y
+apt update -y && apt upgrade -y && sudo vim apt install wget git sudo openjdk-17-jdk-headless -y
+```
+
+Add new user in VISUDO
+```
+visudo
+
+```
+
+Then Insert in 
+#User privilege specification
+```
+USUARIO ALL=(ALL:ALL) ALL
 ```
 
 Create user
