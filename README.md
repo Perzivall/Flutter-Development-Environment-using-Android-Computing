@@ -1,4 +1,4 @@
-# Flutter programming platform for use a android smartphone as web-server enviroment.
+# flutter web development environment using android
 
 > Made by Perzivall in Brazil 🇧🇷
 
