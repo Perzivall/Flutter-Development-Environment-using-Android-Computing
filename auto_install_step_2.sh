@@ -1,6 +1,8 @@
 #!/bin/bash
-apt update -y && apt upgrade -y && 
-apt install sudo unzip xz-utils zip libglu1-mesa libc6:arm64 libncurses5:arm64 libstdc++6:arm64 libbz2-1.0:arm64 clang cmake git ninja-build pkg-config libgtk-3-dev liblzma-dev libstdc++-12-dev -y &&
+apt update -y
+apt upgrade -y 
+apt install sudo unzip xz-utils zip libglu1-mesa -y 
+apt install libc6:arm64 libncurses5:arm64 libstdc++6:arm64 libbz2-1.0:arm64 clang cmake git ninja-build pkg-config libgtk-3-dev liblzma-dev libstdc++-12-dev -y
 
 #DADOS DO USUARIO
 read -p "Crie um novo usuario: " YOUR_USER 
