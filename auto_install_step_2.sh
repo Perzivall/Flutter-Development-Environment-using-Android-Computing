@@ -11,7 +11,7 @@ read -sp "Digite uma senha: " YOUR_PASSWORD
 echo "$YOUR_USER   ALL=(ALL:ALL) ALL" | sudo tee -a /etc/sudoers
 useradd -m -s /bin/bash $YOUR_USER && echo "$YOUR_USER:$YOUR_PASSWORD" | chpasswd && usermod -aG sudo $YOUR_USER
 
-cd $HOME/$YOUR_USER
+cd /home/$YOUR_USER
 curl -fsSL https://code-server.dev/install.sh | sh
 code-server &
 
