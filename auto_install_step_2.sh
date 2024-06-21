@@ -8,23 +8,21 @@ apt install libc6:arm64 libncurses5:arm64 libstdc++6:arm64 libbz2-1.0:arm64 clan
 read -p "Crie um novo usuario: " YOUR_USER 
 read -sp "Digite uma senha: " YOUR_PASSWORD 
 
-#
 echo '$YOUR_USER ALL=(ALL:ALL) ALL' | sudo tee -a /etc/sudoers
 useradd -m -s /bin/bash $YOUR_USER && echo "$YOUR_USER:$YOUR_PASSWORD" | chpasswd && usermod -aG sudo $YOUR_USER
 
-su $YOUR_USER
-cd $HOME
+
+cd $HOME/$YOUR_USER
 curl -fsSL https://code-server.dev/install.sh | sh
 wget https://github.com/Perzivall/Flutter-Server-Android-arm64/releases/download/34.0.4/start.sh
 wget https://github.com/Perzivall/Flutter-Web-Development-Environment-using-Android/releases/download/34.0.4/configure_password.sh
 chmod +x start.sh
 chmod +x configure_password.sh
-file_path="/home/$(whoami)/.config/code-server/config.yaml"
+file_path="/home/$YOUR_USER/.config/code-server/config.yaml"
 
 sed -i -E "s|^(password:).*|\1 $YOUR_PASSWORD|" "$file_path"
 
-./configure_password.sh
-mkdir /home/$(whoami)/android-sdk
+mkdir /home/$YOUR_USER/android-sdk
 cd /home/$(whoami)/android-sdk
 wget https://github.com/Perzivall/Flutter-Server-Android-arm64/releases/download/34.0.4/build-tools-34.0.4-aarch64.tar.xz 
 wget https://github.com/Perzivall/Flutter-Server-Android-arm64/releases/download/34.0.4/platform-tools-34.0.4-aarch64.tar.xz 
@@ -35,9 +33,7 @@ unzip commandlinetools-linux-11076708_latest.zip
 cd cmdline-tools 
 mkdir latest 
 mv * latest 
-cd $HOME
-cd $HOME
-cd $HOME/android-sdk
+cd $HOME/$YOUR_USER/android-sdk
 git clone https://github.com/flutter/flutter.git
 cd $HOME/android-sdk/flutter/bin
 ./flutter doctor -v
