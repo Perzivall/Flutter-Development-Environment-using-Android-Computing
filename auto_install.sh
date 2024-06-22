@@ -18,4 +18,6 @@ proot-distro login debian --isolated -- bash -c "
   chmod +x auto_install_step_2.sh && exit
 "
 
-echo "proot-distro login debian --isolated -- ./auto_install_step_2.sh" >> passo2.sh && chmod +X passo2.sh && ./passo2.sh
+echo 'proot-distro login debian --isolated -- sh -c "./auto_install_step_2.sh"' > passo2.sh
+chmod +x passo2.sh
+./passo2.sh
