@@ -127,27 +127,7 @@ May people know that you, whose name is Jehovah, You alone are the Most High ove
     ./configure_password.sh
     ```
 
-11. For Start enviroment 
-    ```
-    ./start.sh
-    ```
-12. For Stop enviroment
-    ```
-    killall node
-    ```
-
-# 💻 Acess VSCode in a Browser computer 
-> Now you have to able to access the IP address showing in terminal in our Browser, it's showing ip in the termux cli
->
->    example: http://192.168.1.105:8080
-
-> [!Warning]
->    The smartphone and computer must be on the same network.
->     
->    The computer can use a wired connection, but they must have IPs in the same range
-    
-
-1. After access the IP Address in a browser, open the terminal-cli in VSCode Web and
+11. Install Android SDK tools
     ```
     mkdir /home/$(whoami)/android-sdk
     cd /home/$(whoami)/android-sdk
@@ -163,7 +143,7 @@ May people know that you, whose name is Jehovah, You alone are the Most High ove
     cd $HOME
     ```
 
-2. Add variables in the $PATH 
+12. Add variables in the $PATH 
     ```
     echo 'export ANDROID_SDK_ROOT="$HOME/android-sdk/"' >> ~/.bashrc
     echo 'export ANDROID_HOME="$HOME/android-sdk/"' >> ~/.bashrc
@@ -174,7 +154,27 @@ May people know that you, whose name is Jehovah, You alone are the Most High ove
     source ~/.bashrc
     ```
 
-3. Open the VSCode Command-Pallet
+13. For Start enviroment 
+    ```
+    ./start.sh
+    ```
+14. For Stop enviroment
+    ```
+    killall node
+    ```
+
+# 💻 Acess VSCode in a Browser computer 
+> Now you have to able to access the IP address showing in terminal in our Browser, it's showing ip in the termux cli
+>
+>    example: http://192.168.1.105:8080
+
+> [!Warning]
+>    The smartphone and computer must be on the same network.
+>     
+>    The computer can use a wired connection, but they must have IPs in the same range
+    
+
+1. Open the VSCode Command-Pallet
 
     ```
     1. Install the flutter extension on VSCode
@@ -182,6 +182,8 @@ May people know that you, whose name is Jehovah, You alone are the Most High ove
     3. Click on the bottom side popup "Download SDK" and select folder "/home/YOUR_USER/android-sdk/"
     4. Wait paciently to download is complete, then try create new Flutter project
     ```
+
+2. Create a new project Flutter
 
 # 🧑‍🍳 After create Flutter Project
 > [!Warning]
