@@ -30,7 +30,7 @@ wget https://github.com/Perzivall/Flutter-Web-Development-Environment-using-Andr
 
 chmod +x start.sh
 chmod +x configure_password.sh
-
+mkdir /home/$YOUR_USER/VSCodeProjects
 mkdir /home/$YOUR_USER/android-sdk
 cd /home/$YOUR_USER/android-sdk
 mkdir gradle
