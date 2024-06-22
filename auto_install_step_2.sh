@@ -1,7 +1,7 @@
 #!/bin/bash 
 
 #DADOS DO USUARIO
-sleep 3 &&
+sleep 3
 echo 'Agora vamos configurar seu usuario linux, e senha.'
 echo
 read -p 'Crie um novo usuario: ' YOUR_USER 
