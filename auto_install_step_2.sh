@@ -1,12 +1,12 @@
-
+!#/bin/bash
 
 #DADOS DO USUARIO
 sleep 3
 echo 'Agora vamos configurar seu usuario linux, e senha.'
 echo
-read -s 'Crie um novo usuario: ' YOUR_USER 
+read -p 'Crie um novo usuario: ' YOUR_USER 
 echo
-read -s 'Digite uma senha: ' YOUR_PASSWORD 
+read -p 'Digite uma senha: ' YOUR_PASSWORD 
 echo
 echo 'Remember this password!'
 echo 'Will be use to acess VSCode Web Server'
