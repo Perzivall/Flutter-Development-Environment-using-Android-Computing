@@ -21,7 +21,7 @@ echo "-----------------------------------------"
 echo "Ativando servidor"
 
 # Iniciando o code-server em segundo plano e desanexando do terminal
-nohup code-server & disown
+code-server
                   
 # Informando o IP de acesso
 echo "-----------------------------------------"
