@@ -14,7 +14,7 @@ echo 'Will be use to acess VSCode Web Server'
 echo
 sleep 5
 
-apt install sudo unzip xz-utils zip curl net-tools libglu1-mesa pkg-config openjdk-17-jdk-headless wget git vim libc6:arm64 libncurses5:arm64 libstdc++6:arm64 libbz2-1.0:arm64 libgtk-3-dev liblzma-dev libstdc++-12-dev -y 
+apt install sudo unzip xz-utils zip curl net-tools pkg-config openjdk-17-jdk-headless wget git vim -y 
 
 
 
