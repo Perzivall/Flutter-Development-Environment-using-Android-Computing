@@ -27,3 +27,4 @@ echo 'proot-distro login debian --user $YOUR_USER -- bash -c "./start.sh && /bin
 echo
 echo 'WARNING!'
 echo 'Whenever you want to start Enviroment, type ./start.sh' 
+chmod +x start.sh
