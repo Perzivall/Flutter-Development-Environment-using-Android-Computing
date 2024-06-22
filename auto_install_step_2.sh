@@ -47,7 +47,7 @@ cd /home/$YOUR_USER/android-sdk
 git clone https://github.com/flutter/flutter.git
 cd /home/$YOUR_USER/android-sdk/flutter/bin
 ./flutter doctor -v
-echo 'export GRADLE_HOME=="$HOME/android-sdk/gradle"' >> /home/$YOUR_USER/.bashrc
+echo 'export GRADLE_HOME="$HOME/android-sdk/gradle"' >> /home/$YOUR_USER/.bashrc
 echo 'export ANDROID_SDK_ROOT="$HOME/android-sdk/"' >> /home/$YOUR_USER/.bashrc
 echo 'export ANDROID_HOME="$HOME/android-sdk/"' >> /home/$YOUR_USER/.bashrc
 echo 'export PATH="$PATH:$HOME/android-sdk/build-tools/34.0.4"' >> /home/$YOUR_USER/.bashrc
