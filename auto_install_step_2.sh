@@ -4,15 +4,17 @@
 sleep 3
 echo 'Agora vamos configurar seu usuario linux, e senha.'
 echo
-read -p 'Crie um novo usuario: ' YOUR_USER 
+read -p 'Create new user: ' YOUR_USER 
 echo
-read -p 'Digite uma senha: ' YOUR_PASSWORD 
+read -p 'Create new Password: ' YOUR_PASSWORD 
 echo
 echo 'Remember this password!'
+echo
 echo 'Will be use to acess VSCode Web Server'
+echo
 sleep 5
 
-apt install sudo unzip xz-utils zip libglu1-mesa pkg-config openjdk-17-jdk-headless wget git vim libc6:arm64 libncurses5:arm64 libstdc++6:arm64 libbz2-1.0:arm64 libgtk-3-dev liblzma-dev libstdc++-12-dev -y 
+apt install sudo unzip xz-utils zip curl libglu1-mesa pkg-config openjdk-17-jdk-headless wget git vim libc6:arm64 libncurses5:arm64 libstdc++6:arm64 libbz2-1.0:arm64 libgtk-3-dev liblzma-dev libstdc++-12-dev -y 
 
 
 
