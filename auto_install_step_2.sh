@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#DADOS DO USUARIO
+#DADOS DO USUARIOs
 sleep 3
 echo 'Agora vamos configurar seu usuario linux, e senha.'
 echo
