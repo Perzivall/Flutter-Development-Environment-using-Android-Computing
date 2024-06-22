@@ -33,6 +33,7 @@ chmod +x configure_password.sh
 
 mkdir /home/$YOUR_USER/android-sdk
 cd /home/$YOUR_USER/android-sdk
+mkdir gradle
 wget https://github.com/Perzivall/Flutter-Server-Android-arm64/releases/download/34.0.4/build-tools-34.0.4-aarch64.tar.xz 
 wget https://github.com/Perzivall/Flutter-Server-Android-arm64/releases/download/34.0.4/platform-tools-34.0.4-aarch64.tar.xz 
 wget https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip 
@@ -46,6 +47,7 @@ cd /home/$YOUR_USER/android-sdk
 git clone https://github.com/flutter/flutter.git
 cd /home/$YOUR_USER/android-sdk/flutter/bin
 ./flutter doctor -v
+echo 'export GRADLE_HOME=="$HOME/android-sdk/gradle"' >> /home/$YOUR_USER/.bashrc
 echo 'export ANDROID_SDK_ROOT="$HOME/android-sdk/"' >> /home/$YOUR_USER/.bashrc
 echo 'export ANDROID_HOME="$HOME/android-sdk/"' >> /home/$YOUR_USER/.bashrc
 echo 'export PATH="$PATH:$HOME/android-sdk/build-tools/34.0.4"' >> /home/$YOUR_USER/.bashrc
