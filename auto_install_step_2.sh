@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 #DADOS DO USUARIOs
 sleep 3
