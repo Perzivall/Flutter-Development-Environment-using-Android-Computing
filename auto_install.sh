@@ -18,7 +18,7 @@ proot-distro login debian --isolated -- bash -c "
   chmod +x auto_install_step_2.sh
 "
 
-echo 'Finally, create estar script'
+echo 'Finally, create start script'
 read -p 'Enter a user: ' YOUR_USER
 echo
 read -p 'Enter a password: ' YOUR_PASSWORD
