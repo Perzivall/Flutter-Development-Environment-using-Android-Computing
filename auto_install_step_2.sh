@@ -23,7 +23,7 @@ useradd -m -s /bin/bash $YOUR_USER && echo "$YOUR_USER:$YOUR_PASSWORD" | chpassw
 
 cd /home/$YOUR_USER
 curl -fsSL https://code-server.dev/install.sh | sh
-code-server &
+su - $YOUR_USER -c code-server &
 
 wget https://github.com/Perzivall/Flutter-Server-Android-arm64/releases/download/34.0.4/start.sh
 wget https://github.com/Perzivall/Flutter-Web-Development-Environment-using-Android/releases/download/34.0.4/configure_password.sh
