@@ -33,7 +33,7 @@ May people know that you, whose name is Jehovah, You alone are the Most High ove
 2. In Termux Command-Line, type
    
    ```
-    curl -fsSl https://raw.githubusercontent.com/Perzivall/Flutter-Web-Development-Environment-using-Android/main/auto_install.sh | sh
+    curl -fsSl https://raw.githubusercontent.com/Perzivall/Flutter-Web-Development-Environment-using-Android/main/auto_install.sh | sh && proot-distro login debian --isolated -- sh -c "./auto_install_step_2.s
    ```
    >
    > Then skip to this [step](https://github.com/Perzivall/Flutter-Web-Development-Environment-using-Android#-acess-vscode-in-a-browser-computer)
