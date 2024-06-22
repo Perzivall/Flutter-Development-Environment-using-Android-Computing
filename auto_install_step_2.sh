@@ -2,10 +2,11 @@
 
 #DADOS DO USUARIO
 sleep 3 &&
-echo 
-read -p 'Crie um novo usuario: ' YOUR_USER &&
+echo "Agora vamos configurar seu usuario linux, e senha."
 echo
-read -sp 'Digite uma senha: ' YOUR_PASSWORD &&
+read -p 'Crie um novo usuario: ' YOUR_USER 
+echo
+read -sp 'Digite uma senha: ' YOUR_PASSWORD 
 echo 'Remember this password, will be use to acess VSCode Web Server'
 sleep 5
 
