@@ -70,4 +70,4 @@ fi
 # Usando sed para substituir a linha que contém 'password:'
 # Utilizando | como delimitador para evitar conflitos com caracteres da senha
 sed -i -E "s|^(password:).*|\1 $YOUR_PASSWORD|" "$file_path"
-
+exit
