@@ -71,4 +71,3 @@ fi
 # Utilizando | como delimitador para evitar conflitos com caracteres da senha
 sed -i -E "s|^(password:).*|\1 $YOUR_PASSWORD|" "$file_path"
 
-su - $YOUR_USER -c ./start.sh
