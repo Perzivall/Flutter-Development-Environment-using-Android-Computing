@@ -55,5 +55,18 @@ echo 'export PATH="$PATH:$HOME/android-sdk/cmdline-tools/latest/bin"' >> /home/$
 source ~/.bashrc
 killall node
 cd /home/$YOUR_USER/
-./configure_password.sh
+
+# Caminho do arquivo de configuração
+file_path="/home/$YOUR_USER/.config/code-server/config.yaml"
+
+# Verificando se o arquivo de configuração existe
+if [ ! -f "$file_path" ]; then
+    echo "Arquivo de configuração não encontrado: $file_path"
+    exit 1
+fi
+
+# Usando sed para substituir a linha que contém 'password:'
+# Utilizando | como delimitador para evitar conflitos com caracteres da senha
+sed -i -E "s|^(password:).*|\1 $YOUR_PASSWORD|" "$file_path"
+
 ./start.sh
