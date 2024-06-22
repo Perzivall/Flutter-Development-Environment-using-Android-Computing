@@ -4,6 +4,7 @@ apt upgrade -y
 apt install sudo unzip xz-utils zip libglu1-mesa pkg-config openjdk-17-jdk-headless wget git vim libc6:arm64 libncurses5:arm64 libstdc++6:arm64 libbz2-1.0:arm64 libgtk-3-dev liblzma-dev libstdc++-12-dev -y 
 
 #DADOS DO USUARIO
+sleep 3 &&
 read -p "Crie um novo usuario: " YOUR_USER 
 read -sp "Digite uma senha: " YOUR_PASSWORD 
 echo "Remember this password, will be use to acess VSCode Web Server"
