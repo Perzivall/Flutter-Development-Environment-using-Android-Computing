@@ -23,6 +23,6 @@ read -p 'Enter a user: ' YOUR_USER
 echo
 read -p 'Enter a password: ' YOUR_PASSWORD
 echo
-echo 'proot-distro login debian --user $YOUR_USER -- bash -c "./start.sh && /bin/bash" >> start.sh
+echo 'proot-distro login debian --user $YOUR_USER -- bash -c "./start.sh && /bin/bash' >> start.sh
 echo
 echo 'For start Enviroment, type ./start.sh' 
