@@ -8,7 +8,8 @@ read -p 'Crie um novo usuario: ' YOUR_USER
 echo
 read -sp 'Digite uma senha: ' YOUR_PASSWORD 
 echo
-echo 'Remember this password, will be use to acess VSCode Web Server'
+echo 'Remember this password!'
+echo 'will be use to acess VSCode Web Server'
 sleep 5
 
 apt update -y
