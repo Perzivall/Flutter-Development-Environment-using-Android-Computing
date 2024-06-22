@@ -17,3 +17,11 @@ proot-distro login debian --isolated -- bash -c "
   wget https://raw.githubusercontent.com/Perzivall/Flutter-Web-Development-Environment-using-Android/main/auto_install_step_2.sh -O auto_install_step_2.sh &&
   chmod +x auto_install_step_2.sh
 "
+
+echo 'Finally, create estar script'
+read -p 'Enter a user: ' YOUR_USER
+echo
+echo -p 'Enter a password' YOUR_PASSWORD
+echo 'proot-distro login debian --user orion -- bash -c "./start.sh && /bin/bash" >> start.sh
+echo
+echo 'For start Enviroment, type ./start.sh' 
