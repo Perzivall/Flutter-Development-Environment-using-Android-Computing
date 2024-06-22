@@ -1,3 +1,4 @@
+![Nota](https://img.shields.io/badge/ANDROID-SHELL-green) ![Nota](https://img.shields.io/badge/ANDROID-FLUTTER-blue) ![Nota](https://img.shields.io/badge/PERFORMANCE-NATIVE-orange)
 # Flutter Web Development Environment using Android. 
 
 > Use Your smartphone processing to development flutter apps. Enviroment with native performance! Won't used virtualzations
@@ -18,6 +19,24 @@ May people know that you, whose name is Jehovah, You alone are the Most High ove
 - Thank'you for yours contribuitions
 - https://ko-fi.com/perzivall
 
+# 📍 Easy install
+
+> ![Nota](https://img.shields.io/badge/TIPS-OPTIONAL-green)
+> 
+> If your want, can use a easy install script
+> 
+
+1. Download and install Termux
+    > In your android browser, 
+    > acess and download: https://github.com/termux/termux-app/releases/
+      
+2. In Termux Command-Line, type
+   
+   ```
+    curl -fsSl https://raw.githubusercontent.com/Perzivall/Flutter-Web-Development-Environment-using-Android/main/auto_install.sh | sh
+   ```
+   >
+   > Then skip to this [step](https://github.com/Perzivall/Flutter-Web-Development-Environment-using-Android#-acess-vscode-in-a-browser-computer)
 
 # 📟 Termux configuration
 
@@ -25,7 +44,7 @@ May people know that you, whose name is Jehovah, You alone are the Most High ove
     - In your android browser
     - Acess and download: https://github.com/termux/termux-app/releases/
     - Recomended [Click to download](https://github.com/termux/termux-app/releases/download/v0.118.1/termux-app_v0.118.1+github-debug_arm64-v8a.apk)
-
+    
 2. Open Termux and update
     ```
     pkg update -y &&
