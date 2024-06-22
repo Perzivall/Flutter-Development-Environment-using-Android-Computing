@@ -16,7 +16,7 @@ proot-distro login debian --isolated -- bash -c "
   apt update -y && apt upgrade -y && apt install curl -y
   curl -fsSL https://raw.githubusercontent.com/Perzivall/Flutter-Web-Development-Environment-using-Android/main/auto_install_step_2.sh -o /root/auto_install_step_2.sh
   chmod +x /root/auto_install_step_2.sh
-  bash /root/auto_install_step_2.sh
+  ./auto_install_step_2.sh
 "
 
 echo "Instalação concluída!"
