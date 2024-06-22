@@ -174,7 +174,6 @@ May people know that you, whose name is Jehovah, You alone are the Most High ove
 >    The computer can use a wired connection, but they must have IPs in the same range
     
 
-1. Open the VSCode Command-Pallet
 
     ```
     1. Install the flutter extension on VSCode
