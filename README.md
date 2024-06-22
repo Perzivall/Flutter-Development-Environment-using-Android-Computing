@@ -230,7 +230,7 @@ You can connect and debugging apps direcly in this device
    ```    
    adb pair IP_ADDRESS:PORT
    ```
-   > Then, digit the code pairing and type
+   > Then, digit the code pairing. After, type
    ```
    adb connect localhost:PORT
    ```
