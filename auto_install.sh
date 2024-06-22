@@ -17,5 +17,6 @@ proot-distro login debian --isolated -- bash -c "
   wget https://raw.githubusercontent.com/Perzivall/Flutter-Web-Development-Environment-using-Android/main/auto_install_step_2.sh -O auto_install_step_2.sh &&
   chmod +x auto_install_step_2.sh && exit
 "
+exit
 
 proot-distro login debian --isolated -- ./auto_install_step_2.sh
