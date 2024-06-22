@@ -21,7 +21,8 @@ proot-distro login debian --isolated -- bash -c "
 echo 'Finally, create estar script'
 read -p 'Enter a user: ' YOUR_USER
 echo
-echo -p 'Enter a password' YOUR_PASSWORD
+echo -p 'Enter a password: ' YOUR_PASSWORD
+echo
 echo 'proot-distro login debian --user $YOUR_USER -- bash -c "./start.sh && /bin/bash" >> start.sh
 echo
 echo 'For start Enviroment, type ./start.sh' 
