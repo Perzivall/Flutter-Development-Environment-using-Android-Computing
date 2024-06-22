@@ -14,7 +14,7 @@ termux-wake-lock
 # Entrar no ambiente Debian e executar o segundo script
 proot-distro login debian --isolated -- bash -c "
   apt update -y && apt upgrade -y && apt install wget -y &&
-  wget https://raw.githubusercontent.com/Perzivall/Flutter-Web-Development-Environment-using-Android/main/auto_install_step_2.sh &&
+  wget https://raw.githubusercontent.com/Perzivall/Flutter-Web-Development-Environment-using-Android/main/auto_install_step_2.sh -o auto_install_step_2.sh &&
   chmod +x auto_install_step_2.sh
 "
 echo "test" 
