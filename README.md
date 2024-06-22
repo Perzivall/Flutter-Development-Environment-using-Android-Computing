@@ -33,16 +33,7 @@ May people know that you, whose name is Jehovah, You alone are the Most High ove
 2. In Termux Command-Line, type
    
    ```
-    curl -fsSl https://raw.githubusercontent.com/Perzivall/Flutter-Web-Development-Environment-using-Android/main/auto_install.sh | sh && proot-distro login debian -- sh -c "./auto_install_step_2.sh" && read -p 'Enter a user: ' YOUR_USER
-echo
-read -p 'Enter a password: ' YOUR_PASSWORD
-echo
-echo "proot-distro login debian --user $YOUR_USER -- bash -c './start.sh && /bin/bash'" >> start.sh
-echo
-echo 'WARNING!'
-echo 'Whenever you want to start Enviroment, type ./start.sh'
-echo
-chmod +x start.sh
+    curl -fsSl https://raw.githubusercontent.com/Perzivall/Flutter-Web-Development-Environment-using-Android/main/auto_install.sh | sh && proot-distro login debian -- sh -c "./auto_install_step_2.sh"
 
    ```
    >
