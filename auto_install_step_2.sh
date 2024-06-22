@@ -36,12 +36,12 @@ cd /home/$YOUR_USER/android-sdk
 git clone https://github.com/flutter/flutter.git
 cd /home/$YOUR_USER/android-sdk/flutter/bin
 ./flutter doctor -v
-echo 'export ANDROID_SDK_ROOT="$HOME/android-sdk/"' >> ~/.bashrc
-echo 'export ANDROID_HOME="$HOME/android-sdk/"' >> ~/.bashrc
-echo 'export PATH="$PATH:$HOME/android-sdk/build-tools/34.0.4"' >> ~/.bashrc
-echo 'export PATH="$PATH:$HOME/android-sdk/platform-tools"' >> ~/.bashrc
-echo 'export PATH="$PATH:$HOME/android-sdk/flutter/bin"' >> ~/.bashrc
-echo 'export PATH="$PATH:$HOME/android-sdk/cmdline-tools/latest/bin"' >> ~/.bashrc
+echo 'export ANDROID_SDK_ROOT="$HOME/android-sdk/"' >> /home/$YOUR_USER/.bashrc
+echo 'export ANDROID_HOME="$HOME/android-sdk/"' >> /home/$YOUR_USER/.bashrc
+echo 'export PATH="$PATH:$HOME/android-sdk/build-tools/34.0.4"' >> /home/$YOUR_USER/.bashrc
+echo 'export PATH="$PATH:$HOME/android-sdk/platform-tools"' >> /home/$YOUR_USER/.bashrc
+echo 'export PATH="$PATH:$HOME/android-sdk/flutter/bin"' >> /home/$YOUR_USER/.bashrc
+echo 'export PATH="$PATH:$HOME/android-sdk/cmdline-tools/latest/bin"' >> /home/$YOUR_USER/.bashrc
 source ~/.bashrc
 killall node
 cd /home/$YOUR_USER/
