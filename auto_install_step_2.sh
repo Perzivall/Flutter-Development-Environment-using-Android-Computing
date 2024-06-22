@@ -5,8 +5,10 @@ apt install sudo unzip xz-utils zip libglu1-mesa pkg-config openjdk-17-jdk-headl
 
 #DADOS DO USUARIO
 sleep 3 &&
-read -p "Crie um novo usuario: " YOUR_USER 
-read -sp "Digite uma senha: " YOUR_PASSWORD 
+echo 
+read -p "Crie um novo usuario: " YOUR_USER &&
+echo
+read -sp "Digite uma senha: " YOUR_PASSWORD &&
 echo "Remember this password, will be use to acess VSCode Web Server"
 sleep 5
 
