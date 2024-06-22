@@ -27,5 +27,4 @@ echo
 echo 'WARNING!'
 echo 'Whenever you want to start Enviroment, type ./start.sh'
 echo
-echo 'Installation complete!'
 chmod +x start.sh
