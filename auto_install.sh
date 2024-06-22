@@ -15,9 +15,5 @@ termux-wake-lock
 proot-distro login debian --isolated -- bash -c "
   apt update -y && apt upgrade -y && apt install wget -y && cd /root/ &&
   wget https://raw.githubusercontent.com/Perzivall/Flutter-Web-Development-Environment-using-Android/main/auto_install_step_2.sh -O auto_install_step_2.sh &&
-  chmod +x auto_install_step_2.sh && exit
+  chmod +x auto_install_step_2.sh
 "
-
-echo 'proot-distro login debian --isolated -- sh -c "./auto_install_step_2.sh"' > passo2.sh
-chmod +x passo2.sh
-./passo2.sh
