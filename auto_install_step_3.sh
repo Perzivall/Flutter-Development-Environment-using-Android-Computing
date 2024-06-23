@@ -1,3 +1,4 @@
+#!/bin/bash
 read -p 'Enter a user: ' YOUR_USER
 echo
 read -p 'Enter a password: ' YOUR_PASSWORD
