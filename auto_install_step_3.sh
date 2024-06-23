@@ -1,7 +1,6 @@
 #!/bin/bash
-echo
-read -p 'Enter a user: ' YOUR_USER
-echo
+
+read -p 'Enter a user: ' YOUR_USER \n
 read -p 'Enter a password: ' YOUR_PASSWORD
 echo
 echo "proot-distro login debian --user $YOUR_USER -- bash -c './start.sh && /bin/bash'" >> start.sh
