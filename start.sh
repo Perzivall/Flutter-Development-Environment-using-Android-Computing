@@ -6,6 +6,7 @@ ip_address=$(ifconfig | grep 'inet ' | awk '{print $2}' | grep '192' | head -n 1
 # Caminho do arquivo de configuração
 file_path="/home/$(whoami)/.config/code-server/config.yaml"
 
+clear
 # Verificando se a variável ip_address está vazia
 if [ -z "$ip_address" ]; then
     echo "Não foi possível obter IP, usando localhost"
@@ -16,11 +17,8 @@ fi
 # Utilizando | como delimitador para evitar conflitos com caracteres IP
 sed -i -E "s|^(bind-addr:).*|\1 $ip_address:8080|" "$file_path"
 
-clear
-
 echo "Ativando servidor"
 echo
-# Iniciando o code-server em segundo plano e desanexando do terminal
 code-server
                   
 # Informando o IP de acesso
