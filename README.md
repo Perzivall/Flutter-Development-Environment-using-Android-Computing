@@ -193,8 +193,10 @@ May people know that you, whose name is Jehovah, You alone are the Most High ove
    android.aapt2FromMavenOverride=/home/YOUR_USER/android-sdk/build-tools/34.0.4/aapt2
    ```
 2. Open the Android > app > build.gradle and add configure buildToolsVersion to 34.0.4
-   
-   example
+   ```
+    buildToolsVersion = "34.0.4"
+   ```
+   Example
    ```
        defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
@@ -212,11 +214,7 @@ May people know that you, whose name is Jehovah, You alone are the Most High ove
     }
    ```
 
-    ```
-    buildToolsVersion = "34.0.4"
-    ```
-
-3. In the first run, do you need to accept the sdkmanager licenses. Open the terminal and
+4. In the first run, do you need to accept the sdkmanager licenses. Open the terminal and
    ```
    sdkmanager --licenses
    ```
