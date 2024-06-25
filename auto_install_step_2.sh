@@ -56,7 +56,7 @@ echo 'export PATH="$PATH:$HOME/android-sdk/platform-tools"' >> /home/$YOUR_USER/
 echo 'export PATH="$PATH:$HOME/android-sdk/flutter/bin"' >> /home/$YOUR_USER/.bashrc
 echo 'export PATH="$PATH:$HOME/android-sdk/cmdline-tools/latest/bin"' >> /home/$YOUR_USER/.bashrc
 source ~/.bashrc
-yes | sdkmanager --licenses
+su - $YOUR_USER -c "yes | sdkmanager --licenses"
 killall node
 cd /home/$YOUR_USER/
 
