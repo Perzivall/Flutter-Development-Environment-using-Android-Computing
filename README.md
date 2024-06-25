@@ -77,7 +77,7 @@ May people know that you, whose name is Jehovah, You alone are the Most High ove
 
 3. Update Packages Debian
     ```
-    apt update -y && apt upgrade -y && apt install wget git sudo openjdk-17-jdk-headless sudo vim curl git unzip xz-utils zip libglu1-mesa libc6:arm64 libncurses5:arm64 libstdc++6:arm64 libbz2-1.0:arm64 clang cmake git ninja-build pkg-config libgtk-3-dev liblzma-dev libstdc++-12-dev -y
+    apt update -y && apt upgrade -y && apt install sudo unzip xz-utils zip curl net-tools pkg-config openjdk-17-jdk-headless wget git vim -y
     ```
 
 4. Add new user in sudoers file
@@ -89,7 +89,7 @@ May people know that you, whose name is Jehovah, You alone are the Most High ove
    >  #User privilege specification
 
     ```
-    YOUR_USER ALL=(ALL:ALL) ALL
+    <span style="color: red;">YOUR_USER</span> ALL=(ALL:ALL) ALL
     ```
 
 5. Create user
