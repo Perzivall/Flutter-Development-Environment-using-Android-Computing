@@ -19,8 +19,8 @@ May people know that you, whose name is Jehovah, You alone are the Most High ove
 - Thank'you for yours contribuitions
 - https://ko-fi.com/perzivall
 
-# 📍 Easy Install 
-> ![Nota](https://img.shields.io/badge/TIPS-OPTIONAL-orange) ![Nota](https://img.shields.io/badge/EASY-INSTALL-green) ![Nota](https://img.shields.io/badge/CLEAN-INSTALL-blue)
+# 📍 Easy Install \n
+![Nota](https://img.shields.io/badge/TIPS-OPTIONAL-orange) ![Nota](https://img.shields.io/badge/EASY-INSTALL-green) ![Nota](https://img.shields.io/badge/CLEAN-INSTALL-blue)
 > 
 > If do you want, can use a easy install script
 > 
