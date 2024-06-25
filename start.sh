@@ -16,10 +16,10 @@ fi
 # Utilizando | como delimitador para evitar conflitos com caracteres IP
 sed -i -E "s|^(bind-addr:).*|\1 $ip_address:8080|" "$file_path"
 
-# Mensagem de ativação do servidor
-echo "-----------------------------------------"
-echo "Ativando servidor"
+clear
 
+echo "Ativando servidor"
+echo
 # Iniciando o code-server em segundo plano e desanexando do terminal
 code-server
                   
