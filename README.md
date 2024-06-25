@@ -19,7 +19,7 @@ May people know that you, whose name is Jehovah, You alone are the Most High ove
 - Thank'you for yours contribuitions
 - https://ko-fi.com/perzivall
 
-# 📍 Easy install
+# 📍 Easy install (Optimized)
 
 > ![Nota](https://img.shields.io/badge/TIPS-OPTIONAL-green)
 > 
