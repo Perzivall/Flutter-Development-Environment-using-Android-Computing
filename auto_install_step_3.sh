@@ -16,4 +16,5 @@ echo
 echo 'Installation complete!'
 echo
 echo '-----------------------------------------------'
+rm auto_install_step_3.sh -fr
 
