@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-echo 
+echo ''
 echo 'Now well create a start enviroment script'
 echo
 read -p 'Enter a user: ' YOUR_USER \n
