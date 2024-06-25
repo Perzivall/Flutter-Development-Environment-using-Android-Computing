@@ -19,11 +19,11 @@ May people know that you, whose name is Jehovah, You alone are the Most High ove
 - Thank'you for yours contribuitions
 - https://ko-fi.com/perzivall
 
-# 📍 Easy install (Optimized)
+# 🤩 Easy Install (Optimized, Clean, Ready to work)
 
 > ![Nota](https://img.shields.io/badge/TIPS-OPTIONAL-green)
 > 
-> If your want, can use a easy install script
+> If do you want, can use a easy install script
 > 
 
 1. Download and install Termux
