@@ -77,7 +77,7 @@ su - $YOUR_USER -c "code-server --install-extension spacebox.monospace-idx-theme
 su - $YOUR_USER -c "code-server --install-extension dart-code.dart-code"
 su - $YOUR_USER -c "code-server --install-extension dart-code.flutter"
 
-su - $YOUR_USER -c 'echo "{
+su - $YOUR_USER -c "echo '{
     \"workbench.colorTheme\": \"Monospace IDX Dark\",
     \"workbench.iconTheme\": \"monospace-idx-file-icon-theme\"
-}" >> /home/$YOUR_USER/.local/share/code-server/User/settings.json'
+}' >> /home/$YOUR_USER/.local/share/code-server/User/settings.json"
