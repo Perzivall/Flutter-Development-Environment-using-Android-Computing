@@ -19,8 +19,8 @@ May people know that you, whose name is Jehovah, You alone are the Most High ove
 - Thank'you for yours contribuitions
 - https://ko-fi.com/perzivall
 
-# 📍 Easy Install ![Nota](https://img.shields.io/badge/TIPS-OPTIONAL-orange) ![Nota](https://img.shields.io/badge/EASY-INSTALL-green) ![Nota](https://img.shields.io/badge/CLEAN-INSTALL-blue)
-
+# 📍 Easy Install 
+# ![Nota](https://img.shields.io/badge/TIPS-OPTIONAL-orange) ![Nota](https://img.shields.io/badge/EASY-INSTALL-green) ![Nota](https://img.shields.io/badge/CLEAN-INSTALL-blue)
 > If do you want, can use a easy install script
 > 
 
@@ -36,7 +36,8 @@ May people know that you, whose name is Jehovah, You alone are the Most High ove
    >
    > Then skip to this [step](https://github.com/Perzivall/Flutter-Web-Development-Environment-using-Android#-acess-vscode-in-a-browser-computer)
 
-# 📟 Termux configuration ![Nota](https://img.shields.io/badge/ADVANCED-INSTALL-black)
+# 📟 Termux configuration
+# ![Nota](https://img.shields.io/badge/ADVANCED-INSTALL-black)
 
 
 1. Download and install Termux
