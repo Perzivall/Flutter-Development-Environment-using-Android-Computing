@@ -56,6 +56,11 @@ echo 'export PATH="$PATH:$HOME/android-sdk/flutter/bin"' >> /home/$YOUR_USER/.ba
 echo 'export PATH="$PATH:$HOME/android-sdk/cmdline-tools/latest/bin"' >> /home/$YOUR_USER/.bashrc
 source ~/.bashrc
 yes | sdkmanager --licenses
+
+code-server --install-extension spacebox.monospace-idx-theme
+sed -i -E 's|("workbench.colorTheme":\s*).*|\1"Monospace IDX Dark",|' ~/.local/share/code-server/User/settings.json
+sed -i -E 's|("workbench.iconTheme":\s*).*|\1"monospace-idx-file-icon-theme",|' ~/.local/share/code-server/User/settings.json
+
 killall node
 cd /home/$YOUR_USER/
 
