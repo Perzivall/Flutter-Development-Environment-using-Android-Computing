@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Ativar o wake lock do Termux
+termux-wake-lock &&
+
 # Atualizar e instalar pacotes necessários no Termux
 pkg update -y
 pkg upgrade -y
@@ -8,8 +11,7 @@ pkg install proot-distro wget ncurses-utils -y
 # Instalar Debian no proot
 proot-distro install debian
 
-# Ativar o wake lock do Termux
-termux-wake-lock
+
 
 # Entrar no ambiente Debian e executar o segundo script
 proot-distro login debian -- bash -c "
