@@ -89,7 +89,7 @@ May people know that you, whose name is Jehovah, You alone are the Most High ove
    >  #User privilege specification
 
     ```
-    <span style="color: red;">YOUR_USER</span> ALL=(ALL:ALL) ALL
+    YOUR_USER ALL=(ALL:ALL) ALL
     ```
 
 5. Create user
