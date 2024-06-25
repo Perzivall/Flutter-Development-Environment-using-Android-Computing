@@ -37,7 +37,7 @@ If do you want, can use a easy install script
    > Then skip to this [step](https://github.com/Perzivall/Flutter-Web-Development-Environment-using-Android#-acess-vscode-in-a-browser-computer)
 
 # 📟 Termux configuration
-> ![Nota](https://img.shields.io/badge/ADVANCED-INSTALL-black)
+![Nota](https://img.shields.io/badge/ADVANCED-INSTALL-black)
 
 
 1. Download and install Termux
