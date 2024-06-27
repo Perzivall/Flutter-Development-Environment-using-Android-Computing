@@ -226,11 +226,11 @@ You can connect and debugging apps direcly in this device
 
     > Open the debugger settings on the device, find wireless debugging and find Pair device with pairing code
    ```    
-   adb pair IP_ADDRESS:PORT
+   adb pair 127.0.0.1:PORT (this "PORT" is specifiqued in > Developer option > Wireless Debugging > Pair with code)
    ```
    > Then, digit the code pairing. After, type
    ```
-   adb connect localhost:PORT
+   adb connect 127.0.0.1:PORT
    ```
 
 2. If android smartphone version =< Android 10
@@ -240,7 +240,7 @@ You can connect and debugging apps direcly in this device
    ```
    > In your VSCode Web terminal, type
    ```
-   adb connect localhost:5555
+   adb connect 127.0.0.1:5555
    ```
    
    > For connect your smartphone in VSCode enviroment, use always this adb connect command
