@@ -269,16 +269,9 @@ You can connect and debugging apps direcly in this device
 
 1. Compilation
 
-   [x] Works only in debug mode (resolved)
+   - [x] Works only in debug mode (resolved)
 
-   [x] Working to use release and profile (resolved)
-
- 
-   > To build and run app, create flutter project and
-
-   ```
-   flutter run --debug
-   ```
+   - [x] Working to use release and profile (resolved)
 
 # 🤗 Acknowledgments
 1. First of all
