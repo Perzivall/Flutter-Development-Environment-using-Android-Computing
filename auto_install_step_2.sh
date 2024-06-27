@@ -14,7 +14,7 @@ echo 'Will be use to acess VSCode Web Server'
 echo
 sleep 5
 apt update && apt upgrade
-apt install sudo unzip xz-utils zip curl net-tools pkg-config wget git vim -y 
+apt install sudo unzip xz-utils zip curl net-tools pkg-config wget git vim box64 -y 
 
 
 
@@ -71,6 +71,72 @@ fi
 # Utilizando | como delimitador para evitar conflitos com caracteres da senha
 sed -i -E "s|^(password:).*|\1 $YOUR_PASSWORD|" "$file_path"
 
+#Configuração para compilar apps em modo release 
+
+flutter precache -a
+
+##Android-arm64-release
+cd ~/android-sdk/flutter/bin/cache/artifacts/engine/android-arm64-release/
+cp linux-x64/ linux-arm64/ -fr
+cd linux-arm64
+mv gen_snapshot gen_snapshot_
+echo '#!/bin/bash
+/usr/bin/box64 ~/android-sdk/flutter/bin/cache/artifacts/engine/android-arm64-release/linux-arm64/gen_snapshot_ "$@"' > gen_snapshot
+chmod +x gen_snapshot
+
+##Android-arm-release
+cd ~/android-sdk/flutter/bin/cache/artifacts/engine/android-arm-release/
+cp linux-x64/ linux-arm64/ -fr
+cd linux-arm64
+mv gen_snapshot gen_snapshot_
+echo '#!/bin/bash
+/usr/bin/box64 ~/android-sdk/flutter/bin/cache/artifacts/engine/android-arm-release/linux-arm64/gen_snapshot_ "$@"' > gen_snapshot
+chmod +x gen_snapshot
+
+##Android-arm64-profile
+cd ~/android-sdk/flutter/bin/cache/artifacts/engine/android-arm64-profile/
+cp linux-x64/ linux-arm64/ -fr
+cd linux-arm64
+mv gen_snapshot gen_snapshot_
+echo '#!/bin/bash
+/usr/bin/box64 ~/android-sdk/flutter/bin/cache/artifacts/engine/android-arm64-profile/linux-arm64/gen_snapshot_ "$@"' > gen_snapshot
+chmod +x gen_snapshot
+
+##Android-arm-profile
+cd ~/android-sdk/flutter/bin/cache/artifacts/engine/android-arm-profile/
+cp linux-x64/ linux-arm64/ -fr
+cd linux-arm64
+mv gen_snapshot gen_snapshot_
+echo '#!/bin/bash
+/usr/bin/box64 ~/android-sdk/flutter/bin/cache/artifacts/engine/android-arm-profile/linux-arm64/gen_snapshot_ "$@"' > gen_snapshot
+chmod +x gen_snapshot
+
+##Android-x64-release
+cd ~/android-sdk/flutter/bin/cache/artifacts/engine/android-x64-release/
+cp linux-x64/ linux-arm64/ -fr
+cd linux-arm64
+mv gen_snapshot gen_snapshot_
+echo '#!/bin/bash
+/usr/bin/box64 ~/android-sdk/flutter/bin/cache/artifacts/engine/android-x64-release/linux-arm64/gen_snapshot_ "$@"' > gen_snapshot
+chmod +x gen_snapshot
+
+##Android-x86-jit-release
+cd ~/android-sdk/flutter/bin/cache/artifacts/engine/android-x86-jit-release/
+cp linux-x64/ linux-arm64/ -fr
+cd linux-arm64
+mv gen_snapshot gen_snapshot_
+echo '#!/bin/bash
+/usr/bin/box64 ~/android-sdk/flutter/bin/cache/artifacts/engine/android-x86-jit-release/linux-arm64/gen_snapshot_ "$@"' > gen_snapshot
+chmod +x gen_snapshot
+
+##Android-x64-profile
+cd ~/android-sdk/flutter/bin/cache/artifacts/engine/android-x64-profile/
+cp linux-x64/ linux-arm64/ -fr
+cd linux-arm64
+mv gen_snapshot gen_snapshot_
+echo '#!/bin/bash
+/usr/bin/box64 ~/android-sdk/flutter/bin/cache/artifacts/engine/android-x64-profile/linux-arm64/gen_snapshot_ "$@"' > gen_snapshot
+chmod +x gen_snapshot
 
 su - $YOUR_USER -c "code-server --install-extension spacebox.monospace-idx-theme"
 su - $YOUR_USER -c "code-server --install-extension dart-code.dart-code"
