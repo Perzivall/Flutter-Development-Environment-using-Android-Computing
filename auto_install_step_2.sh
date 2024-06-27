@@ -2,7 +2,6 @@
 
 #DADOS DO USUARIOs
 clear
-sleep 2
 echo 'Agora vamos configurar seu usuario linux, e senha.'
 echo
 read -p 'Create new user: ' YOUR_USER 
@@ -14,7 +13,7 @@ echo
 echo 'Will be use to acess VSCode Web Server'
 echo
 sleep 5
-
+apt update && apt upgrade
 apt install sudo unzip xz-utils zip curl net-tools pkg-config openjdk-17-jdk-headless wget git vim -y 
 
 
