@@ -190,7 +190,7 @@ If do you want, can use a easy install script
 
 1. Open the file Android > gradle.properties and add this line in final of file
    ```
-   android.aapt2FromMavenOverride=/home/YOUR_USER/android-sdk/build-tools/34.0.4/aapt2
+   android.aapt2FromMavenOverride=/home/$USER/android-sdk/build-tools/34.0.4/aapt2
    ```
 2. Open the Android > app > build.gradle and add configure buildToolsVersion to 34.0.4
    ```
