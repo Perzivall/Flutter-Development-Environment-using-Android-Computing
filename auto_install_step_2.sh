@@ -138,6 +138,8 @@ echo '#!/bin/bash
 /usr/bin/box64 ~/android-sdk/flutter/bin/cache/artifacts/engine/android-x64-profile/linux-arm64/gen_snapshot_ "$@"' > gen_snapshot
 chmod +x gen_snapshot
 
+cd /home/$YOUR_USER/
+
 su - $YOUR_USER -c "code-server --install-extension spacebox.monospace-idx-theme"
 su - $YOUR_USER -c "code-server --install-extension dart-code.dart-code"
 su - $YOUR_USER -c "code-server --install-extension dart-code.flutter"
