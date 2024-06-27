@@ -73,7 +73,7 @@ sed -i -E "s|^(password:).*|\1 $YOUR_PASSWORD|" "$file_path"
 
 #Configuração para compilar apps em modo release 
 
-su - $YOUR_USER -c "flutter precache -a"
+su - $YOUR_USER -c "/home/$YOUR_USER/android-sdk/flutter/bin/flutter precache -a"
 
 ##Android-arm64-release
 cd /home/$YOUR_USER/android-sdk/flutter/bin/cache/artifacts/engine/android-arm64-release/
