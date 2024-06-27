@@ -3,7 +3,7 @@
 # Atualizar e instalar pacotes necessários no Termux
 pkg update -y
 pkg upgrade -y
-pkg install proot-distro wget ncurses-utils -y
+pkg install proot-distro wget ncurses-utils openjdk-17 -y
 
 # Instalar Debian no proot
 proot-distro install ubuntu
