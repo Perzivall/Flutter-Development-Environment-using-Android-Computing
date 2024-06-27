@@ -31,7 +31,7 @@ If do you want, can use a easy install script
 2. In Termux Command-Line, type
    
    ```
-    termux-wake-lock && curl -fsSl https://raw.githubusercontent.com/Perzivall/Flutter-Web-Development-Environment-using-Android/main/auto_install.sh | sh && proot-distro login debian -- sh -c "./auto_install_step_2.sh" && (curl -fsSl -o auto_install_step_3.sh https://raw.githubusercontent.com/Perzivall/Flutter-Web-Development-Environment-using-Android/main/auto_install_step_3.sh &&  chmod +x auto_install_step_3.sh && ./auto_install_step_3.sh)
+    termux-wake-lock && curl -fsSl https://raw.githubusercontent.com/Perzivall/Flutter-Web-Development-Environment-using-Android/main/auto_install.sh | sh && proot-distro login ubuntu -- sh -c "./auto_install_step_2.sh" && (curl -fsSl -o auto_install_step_3.sh https://raw.githubusercontent.com/Perzivall/Flutter-Web-Development-Environment-using-Android/main/auto_install_step_3.sh &&  chmod +x auto_install_step_3.sh && ./auto_install_step_3.sh)
    ```
    >
    > Then skip to this [step](https://github.com/Perzivall/Flutter-Web-Development-Environment-using-Android#-acess-vscode-in-a-browser-computer)
