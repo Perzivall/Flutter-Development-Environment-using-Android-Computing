@@ -56,23 +56,9 @@ source ~/.bashrc
 
 su - $YOUR_USER -c "yes | /home/$YOUR_USER/android-sdk/cmdline-tools/latest/bin/sdkmanager --licenses"
 killall node
+
 cd /home/$YOUR_USER/
-
-# Caminho do arquivo de configuração
-file_path="/home/$YOUR_USER/.config/code-server/config.yaml"
-
-# Verificando se o arquivo de configuração existe
-if [ ! -f "$file_path" ]; then
-    echo "Arquivo de configuração não encontrado: $file_path"
-    exit 1
-fi
-
-# Usando sed para substituir a linha que contém 'password:'
-# Utilizando | como delimitador para evitar conflitos com caracteres da senha
-sed -i -E "s|^(password:).*|\1 $YOUR_PASSWORD|" "$file_path"
-
 #Configuração para compilar apps em modo release 
-
 su - $YOUR_USER -c "/home/$YOUR_USER/android-sdk/flutter/bin/flutter precache -a"
 
 ##Android-arm64-release
@@ -133,6 +119,19 @@ chmod +x gen_snapshot
 
 cd /home/$YOUR_USER/
 
+# Caminho do arquivo de configuração
+file_path="/home/$YOUR_USER/.config/code-server/config.yaml"
+
+# Verificando se o arquivo de configuração existe
+if [ ! -f "$file_path" ]; then
+    echo "Arquivo de configuração não encontrado: $file_path"
+    exit 1
+fi
+
+# Usando sed para substituir a linha que contém 'password:'
+# Utilizando | como delimitador para evitar conflitos com caracteres da senha
+sed -i -E "s|^(password:).*|\1 $YOUR_PASSWORD|" "$file_path"
+echo 'Finalizing...'
 su - $YOUR_USER -c "code-server --install-extension spacebox.monospace-idx-theme"
 su - $YOUR_USER -c "code-server --install-extension dart-code.dart-code"
 su - $YOUR_USER -c "code-server --install-extension dart-code.flutter"
