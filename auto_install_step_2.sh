@@ -29,6 +29,7 @@ curl -fsSL https://code-server.dev/install.sh | sh
 
 # Download dos scripts adicionais
 cd /home/$YOUR_USER
+su - $YOUR_USER -c "code-server &"
 wget https://raw.githubusercontent.com/Perzivall/Flutter-Web-Development-Environment-using-Android/main/start.sh
 wget https://github.com/Perzivall/Flutter-Web-Development-Environment-using-Android/releases/download/34.0.4/configure_password.sh
 chmod +x start.sh configure_password.sh
@@ -83,6 +84,7 @@ for arch in android-arm64-release android-arm-release android-arm64-profile andr
 done
 
 # Configuração do arquivo de configuração do code-server
+killall node
 file_path="/home/$YOUR_USER/.config/code-server/config.yaml"
 
 # Verificando se o arquivo de configuração existe
