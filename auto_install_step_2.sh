@@ -93,29 +93,29 @@ mv gen_snapshot gen_snapshot_
 echo "/usr/bin/box64 /home/$YOUR_USER/android-sdk/flutter/bin/cache/artifacts/engine/android-arm-profile/linux-arm64/gen_snapshot_ "$@"" > gen_snapshot
 chmod +x gen_snapshot
 
-##Android-x64-release
-cd /home/$YOUR_USER/android-sdk/flutter/bin/cache/artifacts/engine/android-x64-release/
-cp linux-x64/ linux-arm64/ -fr
-cd linux-arm64
-mv gen_snapshot gen_snapshot_
-echo "/usr/bin/box64 /home/$YOUR_USER/android-sdk/flutter/bin/cache/artifacts/engine/android-x64-release/linux-arm64/gen_snapshot_ "$@"" > gen_snapshot
-chmod +x gen_snapshot
+# ##Android-x64-release
+# cd /home/$YOUR_USER/android-sdk/flutter/bin/cache/artifacts/engine/android-x64-release/
+# cp linux-x64/ linux-arm64/ -fr
+# cd linux-arm64
+# mv gen_snapshot gen_snapshot_
+# echo "/usr/bin/box64 /home/$YOUR_USER/android-sdk/flutter/bin/cache/artifacts/engine/android-x64-release/linux-arm64/gen_snapshot_ "$@"" > gen_snapshot
+# chmod +x gen_snapshot
 
-##Android-x86-jit-release
-cd /home/$YOUR_USER/android-sdk/flutter/bin/cache/artifacts/engine/android-x86-jit-release/
-cp linux-x64/ linux-arm64/ -fr
-cd linux-arm64
-mv gen_snapshot gen_snapshot_
-echo "/usr/bin/box64 /home/$YOUR_USER/android-sdk/flutter/bin/cache/artifacts/engine/android-x86-jit-release/linux-arm64/gen_snapshot_ "$@"" > gen_snapshot
-chmod +x gen_snapshot
+# ##Android-x86-jit-release
+# cd /home/$YOUR_USER/android-sdk/flutter/bin/cache/artifacts/engine/android-x86-jit-release/
+# cp linux-x64/ linux-arm64/ -fr
+# cd linux-arm64
+# mv gen_snapshot gen_snapshot_
+# echo "/usr/bin/box64 /home/$YOUR_USER/android-sdk/flutter/bin/cache/artifacts/engine/android-x86-jit-release/linux-arm64/gen_snapshot_ "$@"" > gen_snapshot
+# chmod +x gen_snapshot
 
-##Android-x64-profile
-cd /home/$YOUR_USER/android-sdk/flutter/bin/cache/artifacts/engine/android-x64-profile/
-cp linux-x64/ linux-arm64/ -fr
-cd linux-arm64
-mv gen_snapshot gen_snapshot_
-echo "/usr/bin/box64 /home/$YOUR_USER/android-sdk/flutter/bin/cache/artifacts/engine/android-x64-profile/linux-arm64/gen_snapshot_ "$@"" > gen_snapshot
-chmod +x gen_snapshot
+# ##Android-x64-profile
+# cd /home/$YOUR_USER/android-sdk/flutter/bin/cache/artifacts/engine/android-x64-profile/
+# cp linux-x64/ linux-arm64/ -fr
+# cd linux-arm64
+# mv gen_snapshot gen_snapshot_
+# echo "/usr/bin/box64 /home/$YOUR_USER/android-sdk/flutter/bin/cache/artifacts/engine/android-x64-profile/linux-arm64/gen_snapshot_ "$@"" > gen_snapshot
+# chmod +x gen_snapshot
 
 cd /home/$YOUR_USER/
 
