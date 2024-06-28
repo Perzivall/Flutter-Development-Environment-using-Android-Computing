@@ -5,7 +5,7 @@ echo 'Agora vamos configurar seu usuário Linux e senha.'
 echo
 read -p 'Criar novo usuário: ' YOUR_USER 
 echo
-read -p 'Criar nova senha: ' -s YOUR_PASSWORD 
+read -p 'Criar nova senha: ' YOUR_PASSWORD 
 echo
 echo 'Lembre-se desta senha!'
 echo
@@ -25,7 +25,6 @@ usermod -aG sudo $YOUR_USER
 
 # Instalação do code-server
 su - $YOUR_USER -c "curl -fsSL https://code-server.dev/install.sh | sh"
-su - $YOUR_USER -c "code-server &"
 
 # Download dos scripts adicionais
 cd /home/$YOUR_USER
@@ -88,7 +87,12 @@ file_path="/home/$YOUR_USER/.config/code-server/config.yaml"
 # Verificando se o arquivo de configuração existe
 if [ ! -f "$file_path" ]; then
     echo "Arquivo de configuração não encontrado: $file_path"
-    exit 1
+    mkdir /home/$YOUR_USER/.config/code-server -p
+    echo "bind-addr: 127.0.0.1:8080
+auth: password
+password: $YOUR_PASSWORD
+cert: false" >> config.yaml
+    chmod +x config.yaml
 fi
 
 # Usando sed para substituir a linha que contém 'password:'
