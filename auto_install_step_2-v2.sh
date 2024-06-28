@@ -73,7 +73,7 @@ cd /home/$YOUR_USER/
 su - $YOUR_USER -c "/home/$YOUR_USER/android-sdk/flutter/bin/flutter precache -a"
 
 # Configuração de gen_snapshot para diferentes arquiteturas
-for arch in android-arm64-release android-arm-release android-arm64-profile android-arm-profile android-x64-release android-x86-jit-release android-x64-profile; do
+for arch in android-arm64-release android-arm-release android-arm64-profile android-arm-profile android-x64-release android-x64-profile; do
     cd /home/$YOUR_USER/android-sdk/flutter/bin/cache/artifacts/engine/$arch/
     cp -r linux-x64/ linux-arm64/
     cd linux-arm64
