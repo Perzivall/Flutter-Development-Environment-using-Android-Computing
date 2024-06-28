@@ -86,13 +86,13 @@ file_path="/home/$YOUR_USER/.config/code-server/config.yaml"
 
 # Verificando se o arquivo de configuração existe
 if [ ! -f "$file_path" ]; then
-    echo "Arquivo de configuração não encontrado: $file_path"
+    echo 'Criando arquivo config.yaml'
     mkdir /home/$YOUR_USER/.config/code-server -p
     echo "bind-addr: 127.0.0.1:8080
 auth: password
 password: $YOUR_PASSWORD
-cert: false" >> config.yaml
-    chmod +x config.yaml
+cert: false" > config.yaml &&
+chmod +x config.yaml
 fi
 
 # Usando sed para substituir a linha que contém 'password:'
@@ -104,6 +104,7 @@ su - $YOUR_USER -c "code-server --install-extension dart-code.dart-code"
 su - $YOUR_USER -c "code-server --install-extension dart-code.flutter"
 
 # Configuração de preferências do VSCode
+mkdir /home/$YOUR_USER/.local/share/code-server/User/ -p
 su - $YOUR_USER -c "echo '{
     \"workbench.colorTheme\": \"Monospace IDX Dark\",
     \"workbench.iconTheme\": \"monospace-idx-file-icon-theme\"
