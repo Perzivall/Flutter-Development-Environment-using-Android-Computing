@@ -24,7 +24,8 @@ echo "$YOUR_USER:$YOUR_PASSWORD" | chpasswd
 usermod -aG sudo $YOUR_USER
 
 # Instalação do code-server
-su - $YOUR_USER -c "curl -fsSL https://code-server.dev/install.sh | sh"
+cd /home/$YOUR_USER
+curl -fsSL https://code-server.dev/install.sh | sh
 
 # Download dos scripts adicionais
 cd /home/$YOUR_USER
