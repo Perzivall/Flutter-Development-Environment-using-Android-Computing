@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # Configuração do usuário
 clear
 echo 'Agora vamos configurar seu usuário Linux e senha.'
