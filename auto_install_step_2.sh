@@ -85,6 +85,12 @@ for arch in android-arm64-release android-arm-release android-arm64-profile andr
     chmod +x gen_snapshot
 done
 
+# Configuração do aapt2
+echo "android.aapt2FromMavenOverride=/home/$USER/android-sdk/build-tools/34.0.4/aapt2" >> /home/$YOUR_USER/android-sdk/flutter/packages/flutter_tools/templates/app_shared/android.tmpl/gradle.properties.tmpl 
+echo "android.aapt2FromMavenOverride=/home/$USER/android-sdk/build-tools/34.0.4/aapt2" >> /home/$YOUR_USER/android-sdk/flutter/packages/flutter_tools/templates/module/android/gradle/gradle.properties.tmpl
+echo "android.aapt2FromMavenOverride=/home/$USER/android-sdk/build-tools/34.0.4/aapt2" >> /home/$YOUR_USER/android-sdk/flutter/packages/flutter_tools/test/integration.shard/android_plugin_example_app_build_test.dart
+echo "android.aapt2FromMavenOverride=/home/$USER/android-sdk/build-tools/34.0.4/aapt2" >> /home/$YOUR_USER/android-sdk/flutter/packages/flutter_tools/test/integration.shard/test_data/deferred_components_project.dart
+
 # Configuração do arquivo de configuração do code-server
 killall node
 file_path="/home/$YOUR_USER/.config/code-server/config.yaml"
